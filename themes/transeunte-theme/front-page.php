@@ -12,7 +12,7 @@ while(have_posts()) { the_post();
         <div class="logoMenu ml-3">
           <a href="<?php echo site_url(); ?>">
               <img 
-                src="<?php echo get_theme_file_uri('/images/icon/Transeunte-04.png')?>"
+                src="<?php echo get_theme_file_uri('assets//images/icon/Transeunte-04.png')?>"
                 alt="Logo Transeúnte"
                 title="Logo Transeúnte"
               >
@@ -33,7 +33,7 @@ while(have_posts()) { the_post();
           <h4>AGENCIA DE CONTENIDOS CULTURALES</h4>
           <div class="lineaT">
             <img
-              src="<?php echo get_theme_file_uri('/images/icon/Linea2-01.png') ?>"
+              src="<?php echo get_theme_file_uri('assets//images/icon/Linea2-01.png') ?>"
               alt="Linea"
               title="Linea"
             >
@@ -79,14 +79,14 @@ while(have_posts()) { the_post();
     <section id="manifiesto" class="manifiesto ">
       <div class="manifiesto-titulo container-fulid d-flex flex-column align-items-center  justify-content-center bg-light">
         <img
-        src="<?php echo get_theme_file_uri('images/icon/Separador.png') ?>"
+        src="<?php echo get_theme_file_uri('assets/images/icon/Separador.png') ?>"
         alt="Sombra"
         class="sombra"
         title="Sombra"
         />
         <h2>Manifiesto</h2>
         <img
-        src="<?php echo get_theme_file_uri('images/icon/Separador.png') ?>"
+        src="<?php echo get_theme_file_uri('assets/images/icon/Separador.png') ?>"
         alt="Sombra"
         class="sombra"
         title="Sombra"
@@ -199,7 +199,7 @@ while(have_posts()) { the_post();
       <div class="caminemos-img"></div>
       <div class="caminemos-text d-flex justify-content-center flex-column align-items-center ">
         <img
-          src="<?php echo get_theme_file_uri('images/icon/Separador.png') ?>"
+          src="<?php echo get_theme_file_uri('assets/images/icon/Separador.png') ?>"
           alt="Sombra"
           class="sombra"
           title="Sombra"
@@ -211,7 +211,7 @@ while(have_posts()) { the_post();
           </p>
         </div>
         <img
-        src="<?php echo get_theme_file_uri('images/icon/Separador.png') ?>"
+        src="<?php echo get_theme_file_uri('assets/images/icon/Separador.png') ?>"
         alt="Sombra"
         class="sombra"
         title="Sombra"
@@ -225,7 +225,7 @@ while(have_posts()) { the_post();
               <div class="proyecto-titulo ">Literatura</div>
               <div class="proyecto-separador">
                 <img
-                  src="<?php echo get_theme_file_uri('images/icon/Linea2-01.png') ?>"
+                  src="<?php echo get_theme_file_uri('assets/images/icon/Linea2-01.png') ?>"
                   alt="Linea"
                   title="Linea"
                   />
@@ -238,7 +238,7 @@ while(have_posts()) { the_post();
               <div class="proyecto-titulo">Música</div>
               <div class="proyecto-separador">
                 <img
-                  src="<?php echo get_theme_file_uri('images/icon/Linea2-01.png') ?>"
+                  src="<?php echo get_theme_file_uri('assets/images/icon/Linea2-01.png') ?>"
                   alt="Linea"
                   title="Linea"
                   />
@@ -251,7 +251,7 @@ while(have_posts()) { the_post();
               <div class="proyecto-titulo">Cine y fotografía</div>
               <div class="proyecto-separador">
                 <img
-                  src="<?php echo get_theme_file_uri('images/icon/Linea2-01.png') ?>"
+                  src="<?php echo get_theme_file_uri('assets/images/icon/Linea2-01.png') ?>"
                   alt="Linea"
                   title="Linea"
                   />
@@ -264,7 +264,7 @@ while(have_posts()) { the_post();
               <div class="proyecto-titulo">Artes plásticas</div>
               <div class="proyecto-separador">
                 <img
-                  src="<?php echo get_theme_file_uri('images/icon/Linea2-01.png') ?>"
+                  src="<?php echo get_theme_file_uri('assets/images/icon/Linea2-01.png') ?>"
                   alt="Linea"
                   title="Linea"
                   />
@@ -284,7 +284,7 @@ while(have_posts()) { the_post();
 
       <div class="contenidos-text font-italic">
         <img
-          src="<?php echo get_theme_file_uri('images/icon/Separador.png') ?>"
+          src="<?php echo get_theme_file_uri('assets/images/icon/Separador.png') ?>"
           alt="Sombra"
           class="sombra"
           title="Sombra"
@@ -295,7 +295,7 @@ while(have_posts()) { the_post();
         </p>
         <span> ¡Contamos historias para conectar! </span>
         <img
-          src="<?php echo get_theme_file_uri('images/icon/Separador.png') ?>"
+          src="<?php echo get_theme_file_uri('assets/images/icon/Separador.png') ?>"
           alt="Sombra"
           class="sombra"
           title="Sombra"
@@ -304,7 +304,7 @@ while(have_posts()) { the_post();
       <div class="contenidos-queHacemos font-italic ">
         <div class="contenidos-queHacemos-text wow slideInUp">
           <img
-            src="<?php echo get_theme_file_uri('images/icon/Linea2-01.png') ?>"
+            src="<?php echo get_theme_file_uri('assets/images/icon/Linea2-01.png') ?>"
             alt="Linea"
             title="Linea"
             />
@@ -312,14 +312,14 @@ while(have_posts()) { the_post();
           <div class="lineaContenidos"></div>
         </div>
         <img
-          src="<?php echo get_theme_file_uri('images/icon/Separador.png') ?>"
+          src="<?php echo get_theme_file_uri('assets/images/icon/Separador.png') ?>"
           alt="Sombra"
           class="sombra"
           title="Sombra"
           />
         <div class="contenidos-queHacemos-text wow  slideInUp ">
           <img
-            src="<?php echo get_theme_file_uri('images/icon/Linea2-01.png') ?>"
+            src="<?php echo get_theme_file_uri('assets/images/icon/Linea2-01.png') ?>"
             alt="Linea"
             title="Linea"
             />
@@ -327,14 +327,14 @@ while(have_posts()) { the_post();
           <div class="lineaContenidos"></div>
         </div>
         <img
-          src="<?php echo get_theme_file_uri('images/icon/Separador.png') ?>"
+          src="<?php echo get_theme_file_uri('assets/images/icon/Separador.png') ?>"
           alt="Sombra"
           class="sombra"
           title="Sombra"
           />
         <div class="contenidos-queHacemos-text wow  slideInUp ">
           <img
-            src="<?php echo get_theme_file_uri('images/icon/Linea2-01.png') ?>"
+            src="<?php echo get_theme_file_uri('assets/images/icon/Linea2-01.png') ?>"
             alt="Linea"
             title="Linea"
             />
@@ -342,14 +342,14 @@ while(have_posts()) { the_post();
           <div class="lineaContenidos"></div>
         </div>
         <img
-          src="<?php echo get_theme_file_uri('images/icon/Separador.png') ?>"
+          src="<?php echo get_theme_file_uri('assets/images/icon/Separador.png') ?>"
           alt="Sombra"
           class="sombra"
           title="Sombra"
           />
         <div class="contenidos-queHacemos-text wow  slideInUp ">
           <img
-            src="<?php echo get_theme_file_uri('images/icon/Linea2-01.png') ?>"
+            src="<?php echo get_theme_file_uri('assets/images/icon/Linea2-01.png') ?>"
             alt="Linea"
             title="Linea"
             />
@@ -357,14 +357,14 @@ while(have_posts()) { the_post();
           <div class="lineaContenidos"></div>
         </div>
         <img
-          src="<?php echo get_theme_file_uri('images/icon/Separador.png') ?>"
+          src="<?php echo get_theme_file_uri('assets/images/icon/Separador.png') ?>"
           alt="Sombra"
           class="sombra"
           title="Sombra"
           />
         <div class="contenidos-queHacemos-text wow  slideInUp ">
           <img
-            src="<?php echo get_theme_file_uri('images/icon/Linea2-01.png') ?>"
+            src="<?php echo get_theme_file_uri('assets/images/icon/Linea2-01.png') ?>"
             alt="Linea"
             title="Linea"
             />
@@ -372,7 +372,7 @@ while(have_posts()) { the_post();
           <div class="lineaContenidos"></div>
         </div>
         <img
-          src="<?php echo get_theme_file_uri('images/icon/Separador.png') ?>"
+          src="<?php echo get_theme_file_uri('assets/images/icon/Separador.png') ?>"
           alt="Sombra"
           class="sombra"
           title="Sombra"
@@ -400,7 +400,7 @@ while(have_posts()) { the_post();
           <div class="redS  mx-2">
             <a href="https://www.facebook.com/transeuntehabla/">
               <img
-                src="<?php echo get_theme_file_uri('images/icon/Redes Sociales F.png') ?>"
+                src="<?php echo get_theme_file_uri('assets/images/icon/Redes Sociales F.png') ?>"
                 alt="Icono Facebook"
                 title="Icono Facebook"
                 />
@@ -409,7 +409,7 @@ while(have_posts()) { the_post();
           <div class="redS  mx-2">
             <a href="https://www.linkedin.com/company/transeuntehabla/">
               <img
-                src="<?php echo get_theme_file_uri('images/icon/Redes Sociales in.png') ?>"
+                src="<?php echo get_theme_file_uri('assets/images/icon/Redes Sociales in.png') ?>"
                 alt="Icono LinkedIn"
                 title="Icono LinkedIn"
                 />
@@ -418,7 +418,7 @@ while(have_posts()) { the_post();
           <div class="redS  mx-2">
             <a href="https://www.instagram.com/transeuntehabla/">
               <img
-                src="<?php echo get_theme_file_uri('images/icon/Redes Sociales I.png') ?>"
+                src="<?php echo get_theme_file_uri('assets/images/icon/Redes Sociales I.png') ?>"
                 alt="Icono Instagram"
                 title="Icono Instagram"
                 />

@@ -1,0 +1,38 @@
+{
+  "name": "transeuntehabla-theme",
+  "version": "1.0.0",
+  "description": "Wordpress custom theme for https://transeuntehabla.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alipadron/transeuntehabla-theme.git"
+  },
+  "author": "Ali Padron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alipadron/transeuntehabla-theme/issues"
+  },
+  "homepage": "https://github.com/alipadron/transeuntehabla-theme#readme",
+  "dependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0",
+    "gulp-postcss": "^8.0.0",
+    "jquery": "^3.4.1",
+    "normalize.css": "^8.0.1",
+    "postcss-hexrgba": "^1.0.1",
+    "postcss-import": "^12.0.1",
+    "postcss-mixins": "^6.2.1",
+    "postcss-nested": "^4.1.2",
+    "postcss-simple-vars": "^5.0.2",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.6"
+  }
+}

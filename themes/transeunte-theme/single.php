@@ -7,7 +7,7 @@ while(have_posts()) {
       <div class="event-head ">
         <div class="logoMenu ml-3">
           <a href="<?php echo site_url(); ?>">
-            <img class="" src="<?php echo get_theme_file_uri('images/icon/Transeunte-04.png'); ?>" alt="Transeunte Logo" />
+            <img class="" src="<?php echo get_theme_file_uri('assets/images/icon/Transeunte-04.png'); ?>" alt="Transeunte Logo" />
           </a>
         </div>
         <nav class="event-head-migas" aria-label="breadcrumb">
@@ -57,15 +57,15 @@ while(have_posts()) {
           </div>
           <div class=" event-body-article-redes">
             <div class="redS">
-              <a target="_blank" href="https://www.facebook.com/transeuntehabla/"> <img src="<?php echo get_theme_file_uri('images/icon/Redes Sociales F.png'); ?>" alt="" /> </a>
+              <a target="_blank" href="https://www.facebook.com/transeuntehabla/"> <img src="<?php echo get_theme_file_uri('assets/images/icon/Redes Sociales F.png'); ?>" alt="" /> </a>
             </div>
 
             <div class="redS">
-              <a target="_blank" href="https://www.linkedin.com/company/transeuntehabla/"> <img src="<?php echo get_theme_file_uri('images/icon/Redes Sociales in.png'); ?>" alt="" /> </a>
+              <a target="_blank" href="https://www.linkedin.com/company/transeuntehabla/"> <img src="<?php echo get_theme_file_uri('assets/images/icon/Redes Sociales in.png'); ?>" alt="" /> </a>
             </div>
 
             <div class="redS">
-              <a target="_blank" href="https://www.instagram.com/transeuntehabla/"> <img src="<?php echo get_theme_file_uri('images/icon/Redes Sociales I.png'); ?>" alt="" /> </a>
+              <a target="_blank" href="https://www.instagram.com/transeuntehabla/"> <img src="<?php echo get_theme_file_uri('assets/images/icon/Redes Sociales I.png'); ?>" alt="" /> </a>
             </div>
           </div>
         </div>

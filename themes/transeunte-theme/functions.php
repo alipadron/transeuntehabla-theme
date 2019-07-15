@@ -19,7 +19,7 @@
     );
     wp_enqueue_script(
       'transeunte_main_js',
-      get_theme_file_uri('/js/scripts-bundled.js'),
+      get_theme_file_uri('assets/js/scripts-bundled.js'),
       NULL,
       microtime(),
       true

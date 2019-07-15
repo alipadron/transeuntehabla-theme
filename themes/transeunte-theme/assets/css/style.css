@@ -1,0 +1,22 @@
+/*
+Theme Name: Transeúnte Theme
+Author: Johandry Loyo & Alí Padrón
+Version: 1.0
+*/
+
+/* 3rd party styles */
+@import "normalize.css";
+
+/* Global */
+@import "./base/variables.css";
+@import "./base/font-family.css";
+@import "./base/global.css";
+@import "./base/mixins.css";
+
+/* BEM blocks */
+
+
+
+/* Main Styles */
+/* @import 'modules/estilos.css';
+@import 'modules/estilosUno.css'; */

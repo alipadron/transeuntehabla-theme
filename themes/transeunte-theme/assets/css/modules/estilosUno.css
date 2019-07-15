@@ -9,7 +9,7 @@ a {
 }
 
 #menuAdentro {
-  background-image: url('./images/La-calle-habla.jpg');
+  background-image: url('./assets/images/La-calle-habla.jpg');
   background-size: cover;
   background-position: 15%;
   background-repeat: no-repeat;
@@ -149,7 +149,7 @@ a:hover {
   top: 0px;
   left: 0px;
   display: none;
-  background-image: url('./images/La-calle-habla.jpg');
+  background-image: url('./assets/images/La-calle-habla.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
