@@ -1,0 +1,7 @@
+node_modules
+cache
+languages
+upgrade
+uploads
+plugins
+/*.php
