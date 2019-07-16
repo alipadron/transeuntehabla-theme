@@ -15,10 +15,5 @@ Version: 1.0
 
 /* BEM blocks */
 @import "modules/wrapper";
-@import "modules/site-header";
-@import "modules/btn";
-@import "modules/cover-page";
-
-/* Main Styles */
-/* @import 'modules/estilos.css';
-@import 'modules/estilosUno.css'; */
+@import "modules/portada";
+@import "modules/row";

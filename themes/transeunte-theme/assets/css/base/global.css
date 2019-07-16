@@ -1,8 +1,9 @@
+* {
+  box-sizing: border-box;  
+}
+
 body {
   font-family: 'Base', 'Open Sans', sans-serif;
   color: $darkGray;
-}
-
-a {
-  color: $mainRed;
+  overflow-x: hidden;
 }

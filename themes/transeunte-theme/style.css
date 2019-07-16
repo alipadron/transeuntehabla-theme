@@ -282,12 +282,13 @@ template {
   display: none;
 }
 /* Global */
+* {
+  box-sizing: border-box;  
+}
 body {
   font-family: 'Base', 'Open Sans', sans-serif;
   color: #1E1E1E;
-}
-a {
-  color: #D30032;
+  overflow-x: hidden;
 }
 @font-face {
   font-family: Base;
@@ -297,62 +298,29 @@ a {
 .wrapper {
   padding: 0 20px;
 }
-.site-header {
-  background-color: rgba(30,30,30, .8);
-  position: fixed;
-  width: 100%;
-  text-align: center;
+.portada {
+  background-color: yellow;
+  position: relative;
 }
-@media (min-width: 800px) {
-.site-header {
-    text-align: left
-}
+.portada__imagen {
+    display: block;
+    max-width: 100%;
   }
-.site-header__logo {
-    display: inline;
+.portada__contenido {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
-.site-header__menu-content {
-    float: right;
-    transform: translateY(50%);
-  }
-.site-header__menu-content nav {
-      display: inline-block;
-    }
-.site-header__menu-content nav ul {
-        padding: 0;
-        margin: 0;
-      }
-.site-header__menu-content nav ul li {
-          display: inline;
-          list-style: none;
-          padding-right: 1.2rem;
-        }
-.site-header__menu-content nav ul li a {
-            color: #FFF;
-            text-decoration: none;
-          }
-.site-header__menu-content nav ul li a:hover {
-              color: #D30032;
-            }
-.site-header__menu-content__btn-container {
-      display: inline-block;
-    }
-.site-header__menu-icon {
-    float: right;
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 @media (min-width: 800px) {
-.site-header__menu-icon {
-      display: none
+    .row__medium-6 {
+      float:left;
+      width: 50%
+    }
   }
-  }
-.btn {
-  color: #1E1E1E;
-  padding: .25rem 1.5rem;
-  background-color: #00F9FF;
-}
-.cover-page {
-  
-}
-/* Main Styles */
-/* @import 'modules/estilos.css';
-@import 'modules/estilosUno.css'; */

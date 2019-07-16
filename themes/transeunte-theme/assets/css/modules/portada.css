@@ -1,0 +1,17 @@
+.portada {
+  background-color: yellow;
+  position: relative;
+
+  &__imagen {
+    display: block;
+    max-width: 100%;
+  }
+
+  &__contenido {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
