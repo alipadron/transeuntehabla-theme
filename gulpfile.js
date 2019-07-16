@@ -12,7 +12,7 @@ var gulp = require("gulp"),
 
 gulp.task("styles", function() {
   return gulp
-    .src(settings.themeLocation + "assets/css/**/*.css")
+    .src(settings.themeLocation + "assets/css/style.css")
     .pipe(postcss([cssImport, mixins, cssvars, nested, rgba, autoprefixer]))
     .on("error", error => {
       console.log(error.toString());
