@@ -1,6 +1,6 @@
 /*
 Theme Name: Transeúnte Theme
-Author: Johandry Loyo & Alí Padrón
+Author: Alí Padrón
 Version: 1.0
 */
 
@@ -361,12 +361,12 @@ template {
 
 @font-face {
   font-family: Base;
-  src: url('./assets/css/fonts/MYRIADPRO-REGULAR.OTF')
+  src: url('assets/css/fonts/MYRIADPRO-REGULAR.OTF')
 }
 
 body {
   font-family: 'Base', 'Open Sans', sans-serif;
-  color: #1E1E1E;
+  color: #D30032;
 }
 
 /* BEM blocks */

@@ -1,6 +1,6 @@
 /*
 Theme Name: Transeúnte Theme
-Author: Johandry Loyo & Alí Padrón
+Author: Alí Padrón
 Version: 1.0
 */
 
@@ -8,10 +8,10 @@ Version: 1.0
 @import "normalize.css";
 
 /* Global */
-@import "./base/variables.css";
-@import "./base/font-family.css";
-@import "./base/global.css";
-@import "./base/mixins.css";
+@import "base/variables";
+@import "base/mixins";
+@import "base/font-family";
+@import "base/global";
 
 /* BEM blocks */
 
