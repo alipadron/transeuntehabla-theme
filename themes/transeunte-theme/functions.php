@@ -1,7 +1,7 @@
 <?php
 
   function transeunte_files() {
-    wp_enqueue_script(
+    /* wp_enqueue_script(
       'WOW',
       '//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'
     );
@@ -16,7 +16,7 @@
     wp_enqueue_script(
       'bootstrap-js',
       '//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'
-    );
+    ); */
     wp_enqueue_script(
       'transeunte_main_js',
       get_theme_file_uri('assets/js/scripts-bundled.js'),
@@ -24,7 +24,7 @@
       microtime(),
       true
     );
-    wp_enqueue_style(
+    /* wp_enqueue_style(
       'bootstrap-css',
       '//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
     );
@@ -35,12 +35,12 @@
     wp_enqueue_style(
       'animate-css',
       '//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css'
-    );
+    ); */
     wp_enqueue_style(
       'transeunte_main_styles',
       get_stylesheet_uri(),
       NULL,
-      1.0
+      microtime()
     );
   }
   add_action('wp_enqueue_scripts', 'transeunte_files');

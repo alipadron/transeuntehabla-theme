@@ -282,6 +282,10 @@ template {
   display: none;
 }
 /* Global */
+@font-face {
+  font-family: Base;
+  src: url('assets/css/fonts/MYRIADPRO-REGULAR.OTF')
+}
 * {
   box-sizing: border-box;  
 }
@@ -290,37 +294,91 @@ body {
   color: #1E1E1E;
   overflow-x: hidden;
 }
-@font-face {
-  font-family: Base;
-  src: url('assets/css/fonts/MYRIADPRO-REGULAR.OTF')
-}
 /* BEM blocks */
 .wrapper {
-  padding: 0 20px;
+  padding: 0 20px;  
 }
 .portada {
-  background-color: yellow;
   position: relative;
+  border-bottom: #D30032 solid 1rem;
 }
 .portada__imagen {
     display: block;
     max-width: 100%;
   }
 .portada__contenido {
+    width: 100%;
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
     left: 0;
-    right: 0;
-    bottom: 0;
+    color: #FFF;
+    font-style: italic;
   }
+.portada__contenido__titulo {
+      font-size: 3rem;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+@media (min-width: 576px) {
+.portada__contenido__titulo {
+        font-size: 5rem
+    }
+  }
+@media (min-width: 768px) {
+.portada__contenido__titulo {
+        font-weight: 700;
+        font-size: 6rem
+    }
+  }
+.portada__contenido__subtitulo {
+      font-size: 1rem;
+      margin-top: 0;
+    }
+@media (min-width: 576px) {
+.portada__contenido__subtitulo {
+        font-size: 1.5rem
+    }
+  }
+@media (min-width: 768px) {
+.portada__contenido__subtitulo {
+        font-size: 1.5rem
+    }
+  }
+.portada__contenido__descripcion {
+      background-color: #D30032;
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 0.1rem 0.25rem 0 0.25rem;
+      color: #1E1E1E;
+    }
+@media (min-width: 576px) {
+.portada__contenido__descripcion {
+        font-size: 1.25rem
+    }
+  }
+@media (min-width: 768px) {
+.portada__contenido__descripcion {
+        font-size: 1.5rem;
+        padding: 0.1rem 0.25rem 0 0.25rem
+    }
+  }
+.portada__contenido__btn-video {
+      display: block;
+    }
 .row::after {
     content: "";
     clear: both;
     display: table;
   }
-@media (min-width: 800px) {
+@media (min-width: 768px) {
     .row__medium-6 {
-      float:left;
-      width: 50%
+      float: left;
+      width: 50%;
     }
+  }
+.row__12 {
+    float: left;
+    width: 100%;
   }

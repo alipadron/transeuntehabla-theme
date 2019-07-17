@@ -35,7 +35,9 @@ gulp.task("watch", function(done) {
   browserSync.init({
     notify: false,
     proxy: settings.urlToPreview,
-    ghostMode: false
+    ghostMode: false,
+    online: true,
+    tunnel: true
   });
 
   gulp.watch("./**/*.php", function(done) {
@@ -44,7 +46,7 @@ gulp.task("watch", function(done) {
   });
   gulp.watch(settings.themeLocation + "assets/css/**/*.css", gulp.parallel("waitForStyles"));
   gulp.watch(
-    [settings.themeLocation + "assets/js/modules/*.js", settings.themeLocation + "js/scripts.js"],
+    [settings.themeLocation + "assets/js/modules/*.js", settings.themeLocation + "assets/js/scripts.js"],
     gulp.parallel("waitForScripts")
   );
   done();

@@ -2,39 +2,42 @@
 get_header();
 while(have_posts()) { the_post(); 
 ?>
+  <!-- Portada -->
   <section class="portada">
-    <img
-      class="portada__imagen"
-      src="<?php echo get_theme_file_uri('assets/images/portada--large.jpg'); ?>"
-    >
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="<?php echo get_theme_file_uri('assets/images/portada--extra-large.jpg'); ?>"
+      >
+      <source
+        media="(min-width: 992px)"
+        srcset="<?php echo get_theme_file_uri('assets/images/portada--large.jpg'); ?>"
+      >
+      <source
+        media="(min-width: 768px)"
+        srcset="<?php echo get_theme_file_uri('assets/images/portada--medium.jpg'); ?>"
+      >
+      <source
+        media="(min-width: 576px)"
+        srcset="<?php echo get_theme_file_uri('assets/images/portada--small.jpg'); ?>"
+      >
+      <img
+        class="portada__imagen"
+        src="<?php echo get_theme_file_uri('assets/images/portada--extra-small.jpg'); ?>"
+      >
+    </picture>
     <div class="portada__contenido">
-      <div class="row">
-        <div class="row__medium-6">
-          <div class="portada__contenido__video">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/8R-KBB92iXk"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-            >
-            </iframe>
-          </div>
-        </div>
-        <div class="row__medium-6">
-          <div class="portada__contenido__texto">
-            <h1 class="portada__contenido__texto__titulo">La calle habla</h1>
-            <h2 class="portada__contenido__texto__subtitulo">
-              ¡Todo un viaje por la ciudad de experiencias interminables!
-            </h2>
-            <p class="portada__contenido__texto__descripcion">Agencia de contenidos culturales</p>
-          </div>
-        </div>
+      <div class="wrapper">
+        <h1 class="portada__contenido__titulo">La calle habla</h1>
+        <h2 class="portada__contenido__subtitulo">
+          ¡Todo un viaje por la ciudad de experiencias interminables!
+        </h2>
+        <p class="portada__contenido__descripcion">Agencia de contenidos culturales</p>
       </div>
     </div>
-    
-    
   </section>
+  <!-- Portada -->
+  
   <section id="que-hacemos">
     <h2>¿Qué hacemos?</h2>
     <h3>Título 1</h3>

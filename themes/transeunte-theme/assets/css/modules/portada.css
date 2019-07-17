@@ -1,6 +1,6 @@
 .portada {
-  background-color: yellow;
   position: relative;
+  border-bottom: $mainRed solid 1rem;
 
   &__imagen {
     display: block;
@@ -8,10 +8,62 @@
   }
 
   &__contenido {
+    width: 100%;
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
     left: 0;
-    right: 0;
-    bottom: 0;
+    color: #FFF;
+    font-style: italic;
+
+    &__titulo {
+      font-size: 3rem;
+      margin-bottom: 0;
+      margin-top: 0;
+
+      @mixin atSmall {
+        font-size: 5rem;
+      }
+
+      @mixin atMedium {
+        font-weight: 700;
+        font-size: 6rem;
+      }
+    }
+
+    &__subtitulo {
+      font-size: 1rem;
+      margin-top: 0;
+
+      @mixin atSmall {
+        font-size: 1.5rem;
+      }
+
+      @mixin atMedium {
+        font-size: 1.5rem;
+      }
+    }
+
+    &__descripcion {
+      background-color: $mainRed;
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 0.1rem 0.25rem 0 0.25rem;
+      color: $darkGray;
+
+      @mixin atSmall {
+        font-size: 1.25rem;
+      }
+
+      @mixin atMedium {
+        font-size: 1.5rem;
+        padding: 0.1rem 0.25rem 0 0.25rem;
+      }
+    }
+
+    &__btn-video {
+      display: block;
+    }
   }
 }
