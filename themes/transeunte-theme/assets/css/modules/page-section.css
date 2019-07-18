@@ -1,0 +1,35 @@
+.page-section {
+  padding: 5rem 0 0 0;
+
+  &--gray {
+    background-color: $lightGray;
+  }
+
+  &__title {
+    margin: 0 0 1rem 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.5rem;
+
+    &--red {
+      color: $mainRed;
+    }
+
+    @mixin atSmall {
+      font-size: 3rem;
+    }
+
+    @mixin atLarge {
+      font-weight: 400;
+      font-size: 4rem;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    &--italic {
+      font-style: italic;
+    }
+  }
+}

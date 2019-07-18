@@ -38,32 +38,49 @@ while(have_posts()) { the_post();
   </section>
   <!-- Portada -->
   
-  <section id="que-hacemos">
-    <h2>¿Qué hacemos?</h2>
-    <h3>Título 1</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos 
-      dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum 
-      donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam. 
-      Sodales condimentum urna inceptos dignissim semper purus dictumst velit mi, varius a aliquam quis 
-      fames parturient auctor ridiculus malesuada, non posuere risus sociis montes dui est nisi.</p>
-    <h3>Título 2</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos 
-      dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum 
-      donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam. 
-      Sodales condimentum urna inceptos dignissim semper purus dictumst velit mi, varius a aliquam quis 
-      fames parturient auctor ridiculus malesuada, non posuere risus sociis montes dui est nisi.</p>
-    <h3>Título 3</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos 
-      dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum 
-      donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam. 
-      Sodales condimentum urna inceptos dignissim semper purus dictumst velit mi, varius a aliquam quis 
-      fames parturient auctor ridiculus malesuada, non posuere risus sociis montes dui est nisi.</p>
-    <h3>Título 4</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos 
-      dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum 
-      donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam. 
-      Sodales condimentum urna inceptos dignissim semper purus dictumst velit mi, varius a aliquam quis 
-      fames parturient auctor ridiculus malesuada, non posuere risus sociis montes dui est nisi.</p>
+  <section class="page-section page-section--gray" id="que-hacemos">
+    <div class="wrapper">
+      <h2 class="page-section__title page-section__title--italic page-section__title--red">
+        ¿Qué <strong>hacemos?</strong>
+      </h2>
+      <div class="row row--gutters">
+        <div class="row__medium-6 generic-content-container">
+          <div class="que-hacemos-item">
+            <h3 class="que-hacemos-item__title">Título 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos 
+              dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam. Sodales condimentum urna inceptos dignissim semper purus dictumst velit mi, varius a aliquam quis fames parturient auctor ridiculus malesuada, non posuere risus sociis montes dui est nisi.
+            </p>
+          </div>
+          <div class="que-hacemos-item">
+            <h3 class="que-hacemos-item__title">Título 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos 
+              dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum 
+              donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam. 
+              Sodales condimentum urna inceptos dignissim semper purus dictumst velit mi, varius a aliquam quis 
+              fames parturient auctor ridiculus malesuada, non posuere risus sociis montes dui est nisi.</p>
+          </div>
+        </div>
+        <div class="row__medium-6 generic-content-container">
+          <div class="que-hacemos-item">
+            <h3 class="que-hacemos-item__title">Título 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos 
+              dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum 
+              donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam. 
+              Sodales condimentum urna inceptos dignissim semper purus dictumst velit mi, varius a aliquam quis 
+              fames parturient auctor ridiculus malesuada, non posuere risus sociis montes dui est nisi.</p>
+          </div>
+          <div class="que-hacemos-item">
+            <h3 class="que-hacemos-item__title">Título 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos 
+              dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum 
+              donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam. 
+              Sodales condimentum urna inceptos dignissim semper purus dictumst velit mi, varius a aliquam quis 
+              fames parturient auctor ridiculus malesuada, non posuere risus sociis montes dui est nisi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <section id="orgia-cultural">
     <h2>Orgía cultural</h2>

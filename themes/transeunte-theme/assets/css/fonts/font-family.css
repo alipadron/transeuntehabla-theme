@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+@font-face {
+font-family: 'Myriad Pro';
+font-style: normal;
+font-weight: 400;
+src: local('Myriad Pro Regular'), url('assets/css/fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Myriad Pro';
+font-style: normal;
+font-weight: 300;
+src: local('Myriad Pro Light'), url('assets/css/fonts/MyriadPro-Light.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Myriad Pro';
+font-style: normal;
+font-weight: 500;
+src: local('Myriad Pro Semibold'), url('assets/css/fonts/MYRIADPRO-SEMIBOLD.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Myriad Pro';
+font-style: normal;
+font-weight: 600;
+src: local('Myriad Pro Bold'), url('assets/css/fonts/MYRIADPRO-BOLD.woff') format('woff');
+}
