@@ -114,45 +114,41 @@ while(have_posts()) { the_post();
   <!-- Transeúntes -->
 
   <!-- ¿Qué hacemos? -->
-  <section class="page-section page-section--gray" id="que-hacemos">
+  <section class="page-section page-section--dark-gray" id="que-hacemos">
     <div class="wrapper">
-      <h2 class="page-section__title page-section__title--italic page-section__title--red">
+      <h2 class="page-section__title page-section__title--italic page-section__title--blue">
         ¿Qué <strong>hacemos?</strong>
       </h2>
-      <div class="row row--gutters">
-        <div class="row__medium-6 generic-content-container">
+      <div class="row row--gutters generic-content-container generic-content-container--white">
+        <div class="row__medium-6">
           <div class="que-hacemos-item">
             <h3 class="que-hacemos-item__title">Título 1</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos 
-              dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam. Sodales condimentum urna inceptos dignissim semper purus dictumst velit mi, varius a aliquam quis fames parturient auctor ridiculus malesuada, non posuere risus sociis montes dui est nisi.
+              dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam.
             </p>
           </div>
           <div class="que-hacemos-item">
             <h3 class="que-hacemos-item__title">Título 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos 
-              dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum 
-              donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam. 
-              Sodales condimentum urna inceptos dignissim semper purus dictumst velit mi, varius a aliquam quis 
-              fames parturient auctor ridiculus malesuada, non posuere risus sociis montes dui est nisi.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam.
+            </p>
           </div>
         </div>
-        <div class="row__medium-6 generic-content-container">
+        <div class="row__medium-6">
           <div class="que-hacemos-item">
             <h3 class="que-hacemos-item__title">Título 3</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos 
               dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum 
-              donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam. 
-              Sodales condimentum urna inceptos dignissim semper purus dictumst velit mi, varius a aliquam quis 
-              fames parturient auctor ridiculus malesuada, non posuere risus sociis montes dui est nisi.</p>
+              donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam.
+            </p>
           </div>
           <div class="que-hacemos-item">
             <h3 class="que-hacemos-item__title">Título 4</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos 
               dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum 
-              donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam. 
-              Sodales condimentum urna inceptos dignissim semper purus dictumst velit mi, varius a aliquam quis 
-              fames parturient auctor ridiculus malesuada, non posuere risus sociis montes dui est nisi.</p>
+              donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam.
+            </p>
           </div>
         </div>
       </div>

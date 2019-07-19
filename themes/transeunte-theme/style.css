@@ -451,7 +451,10 @@ body {
       background-size: cover;
     }
   }
-.page-section--gray {
+.page-section--dark-gray {
+    background-color: #1E1E1E;
+  }
+.page-section--light-gray {
     background-color: #E0E0E0;
   }
 .page-section__title {
@@ -462,6 +465,9 @@ body {
   }
 .page-section__title--red {
       color: #D30032;
+    }
+.page-section__title--blue {
+      color: #00F9FF;
     }
 @media (min-width: 992px) {
 .page-section__title {
@@ -502,6 +508,9 @@ body {
 }
 .generic-content-container--gray {
     color: #1E1E1E;
+  }
+.generic-content-container--white {
+    color: #fff;
   }
 .transeunte {
   background-color: rgba(255, 255, 255, .8);

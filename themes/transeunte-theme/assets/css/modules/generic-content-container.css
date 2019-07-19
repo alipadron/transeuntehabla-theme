@@ -5,4 +5,8 @@
   &--gray {
     color: $darkGray;
   }
+
+  &--white {
+    color: #fff;
+  }
 }

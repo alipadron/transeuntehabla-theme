@@ -17,7 +17,11 @@
   
   
 
-  &--gray {
+  &--dark-gray {
+    background-color: $darkGray;
+  }
+
+  &--light-gray {
     background-color: $lightGray;
   }
 
@@ -29,6 +33,10 @@
 
     &--red {
       color: $mainRed;
+    }
+
+    &--blue {
+      color: $mainBlue;
     }
 
     @mixin atLarge {
