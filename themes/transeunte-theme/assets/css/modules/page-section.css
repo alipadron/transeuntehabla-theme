@@ -1,5 +1,21 @@
 .page-section {
-  padding: 5rem 0 0 0;
+  padding: 5rem 0 0;
+
+  &--transeuntes {
+    background: $lightGray;
+  }
+
+  @mixin atLarge {
+    padding-bottom: 2.5rem;
+
+    &--transeuntes {
+      background: url('assets/images/transeuntes.jpg') top center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  
+  
 
   &--gray {
     background-color: $lightGray;
@@ -8,20 +24,16 @@
   &__title {
     margin: 0 0 1rem 0;
     text-align: center;
-    font-weight: 300;
-    font-size: 2.5rem;
+    font-weight: 400;
+    font-size: 3rem;
 
     &--red {
       color: $mainRed;
     }
 
-    @mixin atSmall {
-      font-size: 3rem;
-    }
-
     @mixin atLarge {
       font-weight: 400;
-      font-size: 4rem;
+      font-size: 5rem;
     }
 
     strong {
@@ -31,5 +43,14 @@
     &--italic {
       font-style: italic;
     }
+  }
+
+  &__description {
+    text-align: center;
+    @mixin atLarge {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+    
   }
 }

@@ -321,6 +321,19 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.wrapper--no-padding-until-large {
+    padding: 0 0;
+  }
+@media (min-width: 992px) {
+.wrapper--no-padding-until-large {
+      padding: 0 20px
+  }
+  }
+@media (min-width: 992px) {
+    .wrapper .wrapper {
+      padding: 0;
+    }
+  }
 .portada {
   position: relative;
   border-bottom: #D30032 solid 1rem;
@@ -407,34 +420,53 @@ body {
       width: 50%;
     }
   }
-.row__12 {
-    float: left;
-    width: 100%;
+@media (min-width: 992px) {
+    .row__large-4 {
+      float: left;
+      width: 33.33%
+    }
   }
+@media (min-width: 992px) {
+.row--equal-height-at-large {
+      display: flex
+  }
+  }
+.row--equal-height-at-large > div {
+      float: none;
+      display: flex;
+    }
 .page-section {
-  padding: 5rem 0 0 0;
+  padding: 5rem 0 0;
 }
+.page-section--transeuntes {
+    background: #E0E0E0;
+  }
+@media (min-width: 992px) {
+.page-section {
+    padding-bottom: 2.5rem
+}
+
+    .page-section--transeuntes {
+      background: url('assets/images/transeuntes.jpg') top center no-repeat;
+      background-size: cover;
+    }
+  }
 .page-section--gray {
     background-color: #E0E0E0;
   }
 .page-section__title {
     margin: 0 0 1rem 0;
     text-align: center;
-    font-weight: 300;
-    font-size: 2.5rem;
+    font-weight: 400;
+    font-size: 3rem;
   }
 .page-section__title--red {
       color: #D30032;
     }
-@media (min-width: 576px) {
-.page-section__title {
-      font-size: 3rem
-  }
-  }
 @media (min-width: 992px) {
 .page-section__title {
       font-weight: 400;
-      font-size: 4rem
+      font-size: 5rem
   }
   }
 .page-section__title strong {
@@ -443,6 +475,17 @@ body {
 .page-section__title--italic {
       font-style: italic;
     }
+.page-section__description {
+    text-align: center;
+    
+  }
+@media (min-width: 992px) {
+.page-section__description {
+      font-size: 1.5rem;
+      font-weight: 400
+    
+  }
+  }
 .que-hacemos-item__title {
     font-size: 1.5rem;
     margin: 0;
@@ -454,4 +497,31 @@ body {
   }
   }
 .generic-content-container {
+  font-weight: 300;
+  font-size: 1.25rem;
 }
+.generic-content-container--gray {
+    color: #1E1E1E;
+  }
+.transeunte {
+  background-color: rgba(255, 255, 255, .8);
+  margin: 6rem 0 0 0;
+  text-align: center;
+  padding: 0 1.25rem;
+}
+.transeunte__photo {
+    border: 6px solid rgba(255, 255, 255, .8);
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto -5rem;
+    top: -80px;
+    overflow: hidden;
+    border-radius: 100%;
+  }
+.transeunte__title {
+    color: #D30032;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }

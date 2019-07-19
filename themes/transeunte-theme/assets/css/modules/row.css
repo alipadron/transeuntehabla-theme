@@ -17,10 +17,23 @@
       width: 50%;
     }
   }
-  
-  &__12 {
-    float: left;
-    width: 100%;
+
+  @mixin atLarge {
+    &__large-4 {
+      float: left;
+      width: 33.33%
+    }
   }
-  
+
+  &--equal-height-at-large {
+
+    @mixin atLarge {
+      display: flex;
+    }
+
+    & > div {
+      float: none;
+      display: flex;
+    }
+  }
 }

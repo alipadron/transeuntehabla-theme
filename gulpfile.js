@@ -36,7 +36,7 @@ gulp.task("watch", function(done) {
     notify: false,
     proxy: settings.urlToPreview,
     ghostMode: false,
-    online: true,
+    online: true
   });
 
   gulp.watch("./**/*.php", function(done) {
