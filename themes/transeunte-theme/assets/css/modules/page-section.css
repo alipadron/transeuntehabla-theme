@@ -39,6 +39,10 @@
       color: $mainBlue;
     }
 
+    &--dark-gray {
+      color: $darkGray;
+    }
+
     @mixin atLarge {
       font-weight: 400;
       font-size: 5rem;
