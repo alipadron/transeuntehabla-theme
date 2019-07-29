@@ -1,27 +1,33 @@
 .orgia-cultural-item {
   text-align: center;
   position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
 
   &__image {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
   &__content {
     position: absolute;
-    bottom: .25rem;
-    width: 280px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-
+    width: 100%;
+    color: #FFF;
+    background: rgba(0, 0, 0, .8);
     &__title {
       font-size: 1rem;
-      font-weight: 300;
-      color: #FFF;
-      background: rgba(0, 0, 0, .5);
+      width: 100%;
       margin: 0;
       padding: 1rem 0;
+    }
+
+    &__description {
+      font-weight: 300;
     }
   }
 }

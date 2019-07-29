@@ -1,0 +1,10 @@
+.icon {
+  
+  &--arrow-up {
+    background: url('assets/images/icons/arrow-up.png');
+  }
+
+  &--arrow-down {
+    background: url('assets/images/icons/arrow-down.png');
+  }
+}

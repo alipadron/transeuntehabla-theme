@@ -161,7 +161,7 @@ while(have_posts()) { the_post();
       <h2 class="page-section__title page-section__title--dark-gray page-section__title--italic">
         Orgía <strong>cultural</strong>
       </h2>
-      <div class="row row--margin-top row--margin-bottom">
+      <div class="row row--gutters-large row--margin-top row--margin-bottom">
     <?php
       $homepagePosts = new WP_Query(array(
         'post_type' => array('evento', 'contenido'),
@@ -177,24 +177,24 @@ while(have_posts()) { the_post();
         // Get img tag
         /**
          * Extra small screens: 280x280 image
-         * Small screens: 
+         * Small screens: 250x250 image
+         * Medium screens: 230x230 image
+         * Large screens: 
          * 
          */
-          the_post_thumbnail('post-thumbnail', array(
+          the_post_thumbnail('thumbnail', array(
             'title' => get_the_title(get_post_thumbnail_id(get_the_id())),
             'class' => 'orgia-cultural-item__image'
             ));
         ?>
           <div class="orgia-cultural-item__content">
-            <p class="orgia-cultural-item__content__excerpt">
+            <h3 class="orgia-cultural-item__content__title">
+              <?php echo get_the_title(); ?>
+            </h3>
+            <span class="icon icon--arrow-up" style="display: block;"></span>
+            <p class="orgia-cultural-item__content__description">
               <?php echo get_the_excerpt(); ?>
             </p>
-            <h3 
-              class="orgia-cultural-item__content__title"
-            >
-              <?php echo get_the_title(); ?> 
-            </h3>
-
           </div>
           
         </div>
