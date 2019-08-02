@@ -2,15 +2,18 @@ var $ = require("jquery");
 
 export default class OrgiaCultural {
   constructor() {
-    this.icons = $(".orgia-cultural-icon");
+    this.infoIcons = $(".orgia-cultural-item__info-icon");
 
     this.events();
   }
 
   events() {
-    this.icons.each(function(icon) {
-      $(icon).click(function() {
-        console.log('icon clicked');
+    this.infoIcons.each(function(index, element) {
+      $(element).click(function(event) {
+        $(event.target)
+          .next()
+          .find(".orgia-cultural-item__content__container")
+          .slideToggle();
       });
     });
   }

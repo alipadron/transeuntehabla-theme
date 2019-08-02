@@ -1337,13 +1337,15 @@ a {
       margin: 0;
       padding: 1rem 0;
     }
-.orgia-cultural-item__content__description {
+.orgia-cultural-item__content__container {
+      display: none;
+      margin: 0 0 .25rem 0;
+    }
+.orgia-cultural-item__content__container__description {
       font-weight: 300;
       margin-top: 0;
-    }
-.orgia-cultural-item__content__btn-container {
-      margin-bottom: .25rem;
-    }
+      transition: all .3s ease-out;
+      }
 .btn {
   background-color: #D30032;
   padding: .5rem 1rem;

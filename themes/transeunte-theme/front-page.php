@@ -195,12 +195,13 @@ while(have_posts()) { the_post();
             <h3 class="orgia-cultural-item__content__title">
               <?php echo get_the_title(); ?>
             </h3>
-            <p class="orgia-cultural-item__content__description">
-              <?php echo get_the_excerpt(); ?>
-            </p>
-            <div class="orgia-cultural-item__content__btn-container">
+            <div class="orgia-cultural-item__content__container">
+              <p class="orgia-cultural-item__content__container__description">
+                <?php echo get_the_excerpt(); ?>
+              </p>
               <a href="#" class="btn">Ir a evento</a>
             </div>
+            
           </div>
           
         </div>
