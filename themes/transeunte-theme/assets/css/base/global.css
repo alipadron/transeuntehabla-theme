@@ -6,3 +6,8 @@ body {
   font-family: 'Myriad Pro', 'Open Sans', sans-serif;
   overflow-x: hidden;
 }
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}

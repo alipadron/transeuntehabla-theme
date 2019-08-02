@@ -11,6 +11,15 @@
     display: block;
   }
 
+  &__info-icon {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
   &__content {
     position: absolute;
     bottom: 0;
@@ -28,6 +37,11 @@
 
     &__description {
       font-weight: 300;
+      margin-top: 0;
+    }
+
+    &__btn-container {
+      margin-bottom: .25rem;
     }
   }
 }

@@ -156,6 +156,7 @@ while(have_posts()) { the_post();
   </section>
   <!-- ¿Qué hacemos? -->
 
+  <!-- Orgía cultural -->
   <section class="page-section" id="orgia-cultural">
     <div class="wrapper">
       <h2 class="page-section__title page-section__title--dark-gray page-section__title--italic">
@@ -187,14 +188,19 @@ while(have_posts()) { the_post();
             'class' => 'orgia-cultural-item__image'
             ));
         ?>
+          <div class="orgia-cultural-item__info-icon">
+            
+          </div>
           <div class="orgia-cultural-item__content">
             <h3 class="orgia-cultural-item__content__title">
               <?php echo get_the_title(); ?>
             </h3>
-            <span class="icon icon--arrow-up" style="display: block;"></span>
             <p class="orgia-cultural-item__content__description">
               <?php echo get_the_excerpt(); ?>
             </p>
+            <div class="orgia-cultural-item__content__btn-container">
+              <a href="#" class="btn">Ir a evento</a>
+            </div>
           </div>
           
         </div>
@@ -206,4 +212,6 @@ while(have_posts()) { the_post();
       </div>
     </div>
   </section>
+  <!-- Orgía cultural -->
+
 <?php } get_footer(); ?>

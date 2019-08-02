@@ -1,1 +1,3 @@
-console.log('Alicate');
+import OrgiaCultural from "./modules/orgia-cultural";
+
+var orgiaCultural = new OrgiaCultural();
