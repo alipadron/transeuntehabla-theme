@@ -11,15 +11,6 @@
     display: block;
   }
 
-  &__info-icon {
-    width: 30px;
-    height: 30px;
-    background-color: rgba(0, 0, 0, .8);
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-
   &__content {
     position: absolute;
     bottom: 0;
@@ -28,11 +19,18 @@
     width: 100%;
     color: #FFF;
     background: rgba(0, 0, 0, .8);
+
     &__title {
       font-size: 1rem;
       width: 100%;
       margin: 0;
       padding: 1rem 0;
+    }
+
+    &__icon {
+      color: #FFF;
+      display: inline-block;
+      cursor: pointer;
     }
 
     &__container {

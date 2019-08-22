@@ -188,13 +188,12 @@ while(have_posts()) { the_post();
             'class' => 'orgia-cultural-item__image'
             ));
         ?>
-          <div class="orgia-cultural-item__info-icon">
-            
-          </div>
+          
           <div class="orgia-cultural-item__content">
             <h3 class="orgia-cultural-item__content__title">
               <?php echo get_the_title(); ?>
             </h3>
+              <i class="orgia-cultural-item__content__icon fa fa-arrow-up"></i>
             <div class="orgia-cultural-item__content__container">
               <p class="orgia-cultural-item__content__container__description">
                 <?php echo get_the_excerpt(); ?>
