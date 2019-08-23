@@ -9,19 +9,32 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <header>
-      <a href="<?php echo site_url(); ?>">
-        <img
-          src="<?php echo get_theme_file_uri('assets/images/logo-medium.png') ?>"
-          alt="Transeúnte Logo"
-        >
-      </a>
-      <nav>
-        <ul>
-          <li><a href="#">¿Qué hacemos?</a></li>
-          <li><a href="#">Orgía Cultural</a></li>
-          <li><a href="#">Transeúntes</a></li>
-        </ul>
-      </nav>
-      <a href="#">Contacto</a>
+    <header class="header">
+      <div class="wrapper">
+        <a class="header__logo" href="<?php echo site_url(); ?>">
+          <img
+            src="<?php echo get_theme_file_uri('assets/images/logo-medium.png') ?>"
+            alt="Transeúnte Logo"
+          >
+        </a>
+        <div class="header__menu-icon">
+          <div class="header__menu-icon__middle"></div>
+        </div>
+        <div class="header__menu-content">
+          <nav class="header__menu-content__navigation">
+            <ul>
+              <li><a href="#">¿Qué hacemos?</a></li>
+              <li><a href="#">Orgía cultural</a></li>
+              <li><a href="#">Transeúntes</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+          <div class="header__menu-content__btn-container">
+            <a class="btn" href="#">Contacto</a>
+          </div>
+        </div>
+      </div>
+      
+      
+      
     </header>
