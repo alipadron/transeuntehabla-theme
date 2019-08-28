@@ -1,8 +1,8 @@
 .header {
   background-color: rgba($darkGray, .9);
   position: fixed;
-  z-index: 1;
   width: 100%;
+  z-index: 1;
 
   &__logo {
     margin: 0 auto;
@@ -18,7 +18,7 @@
     width: 20px;
     height: 19px;
     position: absolute;
-    top: 10px;
+    top: 1.1rem;
     right: 10px;
     z-index: 10;
 
@@ -79,25 +79,17 @@
   }
 
   &__menu-content {
-    position: relative;
     text-align: center;
-    opacity: 0;
-    transform: scale(1.2);
-    transition: all .3s ease-out;
-    z-index: -10;
+    display: none;
 
     &--is-visible {
-      opacity: 1;
-      z-index: 1;
-      transform: scale(1);
+      display: block;
     }
 
     @mixin atLarge {
       float: right;
       padding-top: .68rem;
-      opacity: 1;
-      z-index: 1;
-      transform: scale(1);
+      display: block;
     }
 
     &__navigation {

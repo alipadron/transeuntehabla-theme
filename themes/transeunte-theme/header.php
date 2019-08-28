@@ -11,12 +11,14 @@
   <body <?php body_class(); ?>>
     <header class="header">
       <div class="wrapper">
-        <a class="header__logo" href="<?php echo site_url(); ?>">
-          <img
-            src="<?php echo get_theme_file_uri('assets/images/logo-medium.png') ?>"
-            alt="Transeúnte Logo"
-          >
-        </a>
+        <div class="header__logo">
+          <a href="<?php echo site_url(); ?>">
+            <img
+              src="<?php echo get_theme_file_uri('assets/images/logo-medium.png') ?>"
+              alt="Transeúnte Logo"
+            >
+          </a>
+        </div>
         <div class="header__menu-icon">
           <div class="header__menu-icon__middle"></div>
         </div>
@@ -34,7 +36,4 @@
           </div>
         </div>
       </div>
-      
-      
-      
     </header>
