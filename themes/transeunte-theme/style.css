@@ -634,6 +634,9 @@ a {
   cursor: pointer;
   font-weight: 300;
 }
+.btn--big {
+    padding: .75rem 1.5rem;
+  }
 .header {
   background-color: rgba(30,30,30, .9);
   position: fixed;
@@ -754,4 +757,22 @@ a {
         display: inline-block;
         margin-bottom: 0
     }
+  }
+.footer {
+  text-align: center;
+  background-color: #E0E0E0;
+  padding: .5rem 0;
+
+  
+}
+.footer__text {
+    display: block;
+    font-weight: 300;
+    margin-bottom: .5rem;
+  }
+@media (min-width: 768px) {
+.footer__text {
+      margin-right: 1rem;
+      display: inline
+  }
   }

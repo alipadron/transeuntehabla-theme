@@ -1,0 +1,17 @@
+.footer {
+  text-align: center;
+  background-color: $lightGray;
+  padding: .5rem 0;
+
+  &__text {
+    display: block;
+    font-weight: 300;
+    margin-bottom: .5rem;
+    @mixin atMedium {
+      margin-right: 1rem;
+      display: inline;
+    }
+  }
+
+  
+}
