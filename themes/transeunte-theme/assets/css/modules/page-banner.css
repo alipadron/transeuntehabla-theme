@@ -1,0 +1,19 @@
+.page-banner {
+  padding-top: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: $darkGray;
+  position: relative;
+  &__title {
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    &__line {
+      border-bottom: .25rem solid $mainRed;
+    }
+  }
+
+  
+}
