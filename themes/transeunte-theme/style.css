@@ -637,12 +637,25 @@ a {
 .btn--big {
     padding: .75rem 1.5rem;
   }
+.btn--outline {
+    background-color: transparent;
+    border: #D30032 solid 1px;
+  }
+.btn--red-text {
+    color: #D30032;
+  }
 .header {
   background-color: rgba(30,30,30, .9);
   position: fixed;
   width: 100%;
   z-index: 1;
 }
+.header--white {
+    background-color: #FFF;
+  }
+.header--shadow {
+    box-shadow: 0 .125rem 0.625rem rgba(0, 0, 0, .5);
+  }
 .header__logo {
     margin: 0 auto;
     display: block;
@@ -654,6 +667,7 @@ a {
   }
   }
 .header__menu-icon {
+    cursor: pointer;
     width: 20px;
     height: 19px;
     position: absolute;
@@ -661,8 +675,7 @@ a {
     right: 10px;
     z-index: 10;
   }
-.header__menu-icon::before {
-      content: "";
+.header__menu-icon__top {
       position: absolute;
       top: 0;
       left: 0;
@@ -682,8 +695,7 @@ a {
       transition: all .3s ease-out;
       transform-origin: 0 50%;
     }
-.header__menu-icon::after {
-      content: "";
+.header__menu-icon__bottom {
       position: absolute;
       bottom: 0px;
       left: 0;
@@ -698,15 +710,18 @@ a {
       display: none
   }
   }
-.header__menu-icon--close-x::before {
+.header__menu-icon--close-x .header__menu-icon__top {
       transform: rotate(45deg) scaleX(1.25);
     }
 .header__menu-icon--close-x .header__menu-icon__middle {
       opacity: 0;
       transform: scaleX(0);
     }
-.header__menu-icon--close-x::after {
+.header__menu-icon--close-x .header__menu-icon__bottom {
       transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+    }
+.header__menu-icon--black .header__menu-icon__top, .header__menu-icon--black .header__menu-icon__middle, .header__menu-icon--black .header__menu-icon__bottom {
+      background-color: #000;
     }
 .header__menu-content {
     text-align: center;
@@ -718,12 +733,15 @@ a {
 @media (min-width: 992px) {
 .header__menu-content {
       float: right;
-      padding-top: .68rem;
       display: block
   }
   }
+.header__menu-content__navigation--black a {
+          color: #000;
+        }
 @media (min-width: 992px) {
 .header__menu-content__navigation {
+        padding-top: 1.25rem;
         display: inline-block
     }
   }
@@ -775,4 +793,28 @@ a {
       margin-right: 1rem;
       display: inline
   }
+  }
+.page-banner {
+  padding-top: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1E1E1E;
+  position: relative;
+
+  
+}
+.page-banner__title {
+    margin: 0;
+  }
+.page-banner__subtitle {
+    font-weight: 300;
+  }
+.page-banner__subtitle__line {
+      border-bottom: .25rem solid #D30032;
+    }
+.post__title {
+
+  }
+.post__content {
+    
   }

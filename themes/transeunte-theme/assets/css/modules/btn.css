@@ -8,4 +8,13 @@
   &--big {
     padding: .75rem 1.5rem;
   }
+
+  &--outline {
+    background-color: transparent;
+    border: $mainRed solid 1px;
+  }
+
+  &--red-text {
+    color: $mainRed;
+  }
 }

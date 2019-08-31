@@ -9,7 +9,7 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <header class="header">
+    <header class="header header--white header--shadow">
       <div class="wrapper">
         <div class="header__logo">
           <a href="<?php echo site_url(); ?>">
@@ -19,25 +19,22 @@
             >
           </a>
         </div>
-        <div class="header__menu-icon">
+        <div class="header__menu-icon header__menu-icon--black">
           <div class="header__menu-icon__top"></div>
           <div class="header__menu-icon__middle"></div>
           <div class="header__menu-icon__bottom"></div>
         </div>
         <div class="header__menu-content">
-          <nav class="header__menu-content__navigation">
+          <nav class="header__menu-content__navigation header__menu-content__navigation--black">
             <ul>
-              <li><a href="#">¿Qué hacemos?</a></li>
-              <li><a href="#">Orgía cultural</a></li>
-              <li><a href="#">Transeúntes</a></li>
-              <li>
-                <a href="<?php echo esc_url(site_url('/blog')) ?>">Blog</a>
-                </li>
+              <li><a href="#">Cuentos</a></li>
+              <li><a href="#">Entrevistas</a></li>
+              <li><a href="#">Listas</a></li>
             </ul>
           </nav>
-          <div class="header__menu-content__btn-container">
-            <a class="btn" href="#">Contacto</a>
-          </div>
+          <!-- <div class="header__menu-content__btn-container">
+            <a class="btn btn--outline btn--red-text" href="#">Tienda</a>  
+          </div> -->
         </div>
       </div>
     </header>
