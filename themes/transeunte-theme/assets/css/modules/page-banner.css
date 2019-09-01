@@ -10,6 +10,8 @@
 
   &__subtitle {
     font-weight: 300;
+    margin: 0;
+    padding-bottom: 1rem;
     &__line {
       border-bottom: .25rem solid $mainRed;
     }
