@@ -4,6 +4,7 @@
   text-transform: uppercase;
   color: $darkGray;
   position: relative;
+  margin-bottom: 1rem;
   &__title {
     margin: 0;
   }

@@ -24,6 +24,14 @@
   function transeunte_features() {
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
+    // Post Landscape Sizes
+    add_image_size('postLandscapeExtraSmall', 448, 250, true);
+    add_image_size('postLandscapeSmall', 672, 350, true);
+    add_image_size('postLandscapeMedium', 880, 350, true);
+    add_image_size('postLandscapeLarge', 1096, 425, true);
+
+    // Portrait Portrait Sizes
+    add_image_size('postPortraitLarge', 150, 300, true);
   }
   add_action('after_setup_theme', 'transeunte_features');
   

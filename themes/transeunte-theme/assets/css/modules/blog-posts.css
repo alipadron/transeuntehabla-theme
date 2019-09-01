@@ -1,0 +1,61 @@
+.blog-posts {
+
+  &__most-recent {
+
+    &__image {
+      display: block;
+      width: 100%;
+    }
+
+    &__text {
+      &__title {
+        margin-top: 0;
+        text-transform: uppercase;
+        a {
+          color: #000;
+        }
+      }
+  
+      &__meta-info span a {
+        color: $mainRed;
+      }
+    }
+  }
+
+  &__others {
+
+    &__post {
+      margin-bottom: 2rem;
+
+      @mixin atLarge {
+        margin-bottom: 0;
+      }
+      &__text {
+        background-color: $darkGray;
+        color: $lightGray;
+        margin-top: 0;
+        @mixin atLarge {
+          padding: 0 20px;
+        }
+        &__title {
+          margin: 0;
+          padding: 1rem 0;
+          text-transform: uppercase;
+        }
+
+        &__content {
+          margin: 0;
+          padding-bottom: 1rem;
+        }
+      }
+
+      &__image {
+        display: block;
+        width: 100%;
+      }
+
+      
+    }
+    
+  }
+}

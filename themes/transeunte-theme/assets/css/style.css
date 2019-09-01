@@ -30,4 +30,8 @@ Version: 1.0
 @import "modules/header.css";
 @import "modules/footer.css";
 @import "modules/page-banner.css";
-@import "modules/post.css"
+@import "modules/post.css";
+@import "modules/featured-posts.css";
+@import "modules/blog-posts.css";
+@import "modules/separator.css";
+@import "modules/main-blog.css";
