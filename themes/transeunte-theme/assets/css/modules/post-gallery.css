@@ -1,0 +1,8 @@
+.post-gallery {
+  background-color: $lightGray;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}

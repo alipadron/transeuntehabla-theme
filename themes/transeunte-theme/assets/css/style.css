@@ -6,7 +6,7 @@ Version: 1.0
 
 /* 3rd party styles */
 @import "normalize.css";
-/* @import "font-awesome/css/font-awesome.min.css"; */
+@import "slick-carousel/slick/slick.css";
 
 /* Fonts */
 @import "fonts/font-family";
@@ -38,3 +38,4 @@ Version: 1.0
 @import "modules/social-icons.css";
 @import "modules/meta-info.css";
 @import "modules/post-content.css";
+@import "modules/post-gallery.css";

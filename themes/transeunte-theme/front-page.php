@@ -183,7 +183,7 @@ while(have_posts()) { the_post();
          * Large screens: 
          * 
          */
-          the_post_thumbnail('thumbnail', array(
+          the_post_thumbnail('squareMedium', array(
             'title' => get_the_title(get_post_thumbnail_id(get_the_id())),
             'class' => 'orgia-cultural-item__image'
             ));
@@ -198,7 +198,7 @@ while(have_posts()) { the_post();
               <p class="orgia-cultural-item__content__container__description">
                 <?php echo get_the_excerpt(); ?>
               </p>
-              <a href="#" class="btn">Ir a evento</a>
+              <a href="<?php echo get_the_permalink(); ?>" class="btn">Ir a evento</a>
             </div>
             
           </div>

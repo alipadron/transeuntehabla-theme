@@ -9,5 +9,12 @@
 
   &__text {
     text-align: justify;
+    a {
+      color: $mainRed;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   }
 }

@@ -2,7 +2,7 @@
   function transeunte_post_types() {
     // Evento Post Type
     register_post_type('evento', array(
-      'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'custom-fields'),
+      'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', 'author'),
       'rewrite' => array(
         'slug' => 'eventos'
       ),
@@ -22,7 +22,7 @@
 
     // Contenido Post Type
     register_post_type('contenido', array(
-      'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'custom-fields'),
+      'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', 'author'),
       'rewrite' => array(
         'slug' => 'contenidos'
       ),
