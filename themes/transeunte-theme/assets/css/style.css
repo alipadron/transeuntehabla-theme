@@ -35,3 +35,6 @@ Version: 1.0
 @import "modules/blog-posts.css";
 @import "modules/separator.css";
 @import "modules/main-blog.css";
+@import "modules/social-icons.css";
+@import "modules/meta-info.css";
+@import "modules/post-content.css";

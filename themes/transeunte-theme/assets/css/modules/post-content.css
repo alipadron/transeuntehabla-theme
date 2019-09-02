@@ -1,0 +1,9 @@
+.post-content {
+  position: relative;
+
+  &__thumbnail {
+    display: block;
+    width: 100%;
+    padding-top: 2rem;
+  }
+}

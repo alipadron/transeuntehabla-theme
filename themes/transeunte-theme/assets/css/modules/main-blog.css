@@ -1,3 +1,6 @@
 .main-blog {
-  margin-bottom: 1rem;
+  @mixin atLarge {
+    margin-bottom: 1rem;
+  }
+  position: relative;
 }

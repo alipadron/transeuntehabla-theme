@@ -6,11 +6,11 @@ get_header('blog');
 <section class="page-banner">
   <div class="wrapper">
     <h1 class="page-banner__title">
-      Blog de transeúnte
+      La calle de las opiniones
     </h1>
     <p class="page-banner__subtitle">
-      Bienvenido al blog de 
-      <span class="page-banner__subtitle__line">Transeúnte</span>
+      Transitamos sin
+      <span class="page-banner__subtitle__line">cesar</span>
     </p>
   </div>
 </section>
@@ -33,7 +33,7 @@ get_header('blog');
           if ($postCounter) {
             if ($postCounter === 1) { // Otros posts
               echo '<div class="blog-posts__others">';
-              echo '<div class="row row--gutters-large">';
+              echo '<div class="row row--gutters-large row--equal-height-at-large">';
             }
       ?>
               <div class="row__large-4">
@@ -188,6 +188,15 @@ get_header('blog');
   }
 ?>
 <!-- Posts -->
+
+<div class="social-icons social-icons--blog-home social-icons--background-dark-gray social-icons--light-gray">
+  <p class="social-icons__text">Síguenos</p>
+  <a href="https://www.instagram.com/transeuntehabla/"><i class="fa fa-instagram"></i></a>
+  <a href="https://www.linkedin.com/company/transeuntehabla"><i class="fa fa-linkedin"></i></a>
+  <a href="https://www.facebook.com/transeuntehabla"><i class="fa fa-facebook"></i></a>
+  
+  
+</div>
 
 </main>
 

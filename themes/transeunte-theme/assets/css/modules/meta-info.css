@@ -1,0 +1,22 @@
+.meta-info {
+  display: inline;
+  margin: 0;
+  text-align: center;
+
+  @mixin atLarge {
+    text-align: left;
+  }
+
+  &__text {
+    font-weight: 300;
+    a {
+      color: $mainRed;
+    }
+  
+    a:hover {
+      text-decoration: underline;
+      font-weight: 400;
+    }
+  }
+  
+}
