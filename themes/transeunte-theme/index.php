@@ -6,7 +6,7 @@ get_header('blog');
 <section class="page-banner">
   <div class="wrapper">
     <h1 class="page-banner__title">
-      La calle de las opiniones
+      Calle de las opiniones
     </h1>
     <p class="page-banner__subtitle">
       Transitamos sin

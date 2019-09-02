@@ -81,7 +81,7 @@ get_header();
           ?>
           <div class="row__small-6 row__medium-4 row__extra-large-3">
             <a class="item" href="<?php echo $image['url']; ?>">
-              <img src="<?php echo $image['sizes']['squareMedium']; ?>" />
+              <img src="<?php echo $image['sizes']['thumbnail']; ?>" />
             </a>
           </div>
           <?php
