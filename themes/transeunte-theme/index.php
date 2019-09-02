@@ -60,7 +60,7 @@ get_header('blog');
                   </picture>
                   <div class="blog-posts__others__post__text wrapper wrapper--keep-padding generic-content-container">
                     <h2 class="blog-posts__others__post__text__title">
-                      <?php echo get_the_title(); ?>
+                      <a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a>
                     </h2>
                     <p class="blog-posts__others__post__text__content">
                       <?php echo wp_trim_words(get_the_content(), 18); ?>
@@ -167,10 +167,11 @@ get_header('blog');
             </p>
             <div class="featured-posts__post__text wrapper">
               <h2 class="featured-posts__post__text__title">
-                <?php echo get_the_title(); ?>
+                <a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a>
               </h2>
               <p class="featured-posts__post__text__content">
                 <?php echo wp_trim_words(get_the_content(), 18); ?>
+                <a href="<?php echo get_the_permalink() ?>">Leer más</a>
               </p>
             </div>
             

@@ -1,5 +1,7 @@
 .blog-posts {
-
+  a:hover {
+    text-decoration: underline;
+  }
   &__most-recent {
 
     &__image {

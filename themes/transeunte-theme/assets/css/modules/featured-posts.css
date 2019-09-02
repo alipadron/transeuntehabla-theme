@@ -5,7 +5,6 @@
     border-left: #000 solid .5px;
   }
   &__post {
-
     &__image {
       display: block;
       width: 100%;
@@ -25,10 +24,23 @@
         text-transform: uppercase;
         margin: 1rem 0 0;
         color: $darkGray;
+
+        a {
+          color: $darkGray;
+        }
       }
   
       &__content {
         margin: .5rem 0 0;
+        a {
+          color: $mainRed;
+        }
+      }
+
+      
+
+      a:hover {
+        text-decoration: underline;
       }
     }
   }

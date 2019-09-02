@@ -33,15 +33,15 @@ get_header('blog');
     </div>
     
     <div class="row row--gutters-large">
-      <!-- Los últimos 4 posts -->
+      <!-- Contenido del post -->
       <div class="row__large-10">
         <section class="post-content">
-        <div class="social-icons social-icons--blog-post social-icons--background-red">
-          <p class="social-icons__text social-icons__text--display-always social-icons__text--white">Comparte</p>
-          <a href="https://www.instagram.com/transeuntehabla/"><i class="fa fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/company/transeuntehabla"><i class="fa fa-linkedin"></i></a>
-          <a href="https://www.facebook.com/transeuntehabla"><i class="fa fa-facebook"></i></a>
-        </div>
+          <div class="social-icons social-icons--blog-post social-icons--background-red">
+            <p class="social-icons__text social-icons__text--display-always social-icons__text--white">Comparte</p>
+            <!-- <a href="https://www.instagram.com/transeuntehabla/"><i class="fa fa-instagram"></i></a> -->
+            <a href="https://www.linkedin.com/company/transeuntehabla"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/transeuntehabla"><i class="fa fa-facebook"></i></a>
+          </div>
           <picture>
             <source
               media="(min-width: 1200px)"
@@ -66,10 +66,13 @@ get_header('blog');
               src="<?php echo get_the_post_thumbnail_url( get_the_id(), 'postLandscapeExtraSmall'); ?>"
             >
           </picture>
+          <div class="post-content__text generic-content-container wrapper">
+            <?php the_content(); ?>
+          </div>
         </section>
       </div>
-      <!-- Los últimos 4 posts -->
-
+      <!-- Contenido del post -->
+      <hr class="separator separator--visible-until-large">
       <!-- Posts destacados -->
       <div class="row__large-2">
         <section class="featured-posts">
@@ -112,10 +115,11 @@ get_header('blog');
             </p>
             <div class="featured-posts__post__text wrapper">
               <h2 class="featured-posts__post__text__title">
-                <?php echo get_the_title(); ?>
+                <a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a>
               </h2>
               <p class="featured-posts__post__text__content">
                 <?php echo wp_trim_words(get_the_content(), 18); ?>
+                <a href="<?php echo get_the_permalink() ?>">Leer más</a>
               </p>
             </div>
             

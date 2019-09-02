@@ -8,4 +8,10 @@
       width: 66.66%;      
     }
   }
+
+  &--visible-until-large {
+    @mixin atLarge {
+      display: none;
+    }
+  }
 }
