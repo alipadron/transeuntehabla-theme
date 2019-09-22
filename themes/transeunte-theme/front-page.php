@@ -165,6 +165,10 @@ while(have_posts()) { the_post();
             <p class="transeunte__description">Artista visual con experiencia en el desarrollo de la identidad para marcas, 
             eventos y proyectos vinculados con el sector cultural. Además he trabajado como diseñador editorial y publicitario 
             pero como el arte es heterodoxo, busco dejar mi esencia en cualquier proyecto que sea coherente. No importa el medio.</p>
+            <div class="transeunte__social-icons">
+              <a href="https://www.instagram.com/saintkonde/"><i class="fa fa-instagram"></i></a>
+              <a href="https://twitter.com/SaintKonde"><i class="fa fa-twitter"></i></a>
+            </div>
           </div>
         </div>
         <div class="row__large-4">
@@ -173,7 +177,7 @@ while(have_posts()) { the_post();
               <img
                 src="
                 <?php
-                  echo get_theme_file_uri('assets/images/maria-laura.jpg');
+                  echo get_theme_file_uri('assets/images/maria-laura-padron.jpg');
                 ?>"
                 alt="María Laura Padrón"
                 title="María Laura Padrón"
@@ -183,6 +187,11 @@ while(have_posts()) { the_post();
             <p class="transeunte__description">Periodista con predilección hacia la literatura. Desde hace cuatro años malabareo el arte de escribir, 
             conceptualizar, organizar y entrevistar. Cada acción ha sido una experiencia reflejada en prensa digital e impresa; en presentaciones de 
             libros y otros eventos culturales en Valencia-Venezuela y Madrid-España.</p>
+            <div class="transeunte__social-icons">
+              <a href="https://www.instagram.com/malaupadron/"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/marialaurapadron/"><i class="fa fa-linkedin"></i></a>
+              <a href="https://twitter.com/malaupadron/"><i class="fa fa-twitter"></i></a>
+            </div>
           </div>
         </div>
         <div class="row__large-4">
@@ -191,7 +200,7 @@ while(have_posts()) { the_post();
               <img
                 src="
                 <?php
-                  echo get_theme_file_uri('assets/images/luis-felipe.jpg');
+                  echo get_theme_file_uri('assets/images/luis-felipe-hernandez.png');
                 ?>"
                 alt="Luis Felipe Hernández"
                 title="Luis Felipe Hernández"
@@ -201,6 +210,9 @@ while(have_posts()) { the_post();
             <p class="transeunte__description">Comunicador por naturaleza y periodista ante la ley. No se trata solamente de informar, 
             educar y entretener sino de contar. Mi filosofía de trabajo emprende la búsqueda de detalles para convertirlos en un valor agregado, 
             eso trato de llevarlo a cabo en el periodismo y la redacción de contenido.</p>
+            <div class="transeunte__social-icons">
+              <a href="https://www.linkedin.com/in/luis-felipe-hern%C3%A1ndez-l%C3%B3pez-/"><i class="fa fa-linkedin"></i></a>
+            </div>
           </div>
         </div>
       </div>
