@@ -8,10 +8,11 @@
   @mixin atLarge {
     padding-bottom: 2.5rem;
 
-    &--transeuntes {
+    /*&--transeuntes {
       background: url('assets/images/transeuntes.jpg') top center no-repeat;
       background-size: cover;
     }
+    */
   }
 
   
