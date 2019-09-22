@@ -1,6 +1,5 @@
 .generic-content-container {
   font-weight: 300;
-  font-size: 1.25rem;
 
   &--gray {
     color: $darkGray;
