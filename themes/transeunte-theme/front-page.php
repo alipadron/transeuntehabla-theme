@@ -104,36 +104,31 @@ while(have_posts()) { the_post();
       <h2 class="page-section__title page-section__title--italic page-section__title--blue">
         Servicios
       </h2>
+      <div class="wrapper">
+        <p class="page-section__description page-section__description--white page-section__description--fixed-width-at-large">Queremos ayudarte a encontrar tu camino. Si representas una marca, empresa, proyecto o medio de comunicación, te costará decirnos adiós.</p>
+      </div>
       <div class="row row--gutters generic-content-container generic-content-container--white">
         <div class="row__medium-6">
           <div class="servicio">
-            <h3 class="servicio__title">Título 1</h3>
+            <h3 class="servicio__title">Organización de <span class="servicio__title__line">eventos</span></h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos 
-              dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam.
+              Conceptualizamos, planificamos y organizamos eventos como presentaciones de libros, talleres, conversatorios, festivales, conciertos acústicos, clínicas musicales, 
+              cine foros, exposiciones, recorridos fotográficos y performance artísticos. 
+            </p>
+            <p>
+              El entorno offline necesita de movimiento y contacto. Propiciamos experiencias que conectan con el público. 
             </p>
           </div>
-          <div class="servicio">
-            <h3 class="servicio__title">Título 2</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam.
-            </p>
-          </div>
+          
         </div>
         <div class="row__medium-6">
           <div class="servicio">
-            <h3 class="servicio__title">Título 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos 
-              dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum 
-              donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam.
+            <h3 class="servicio__title">Generación de <span class="servicio__title__line">contenido</span></h3>
+            <p>
+            Conceptualizamos, planificamos, redactamos y diseñamos pensando en el marketing de contenidos. 
+            Aplicamos el storytelling para proyectos culturales. No obstante, también nos valemos del periodismo y el arte multimedia.
             </p>
-          </div>
-          <div class="servicio">
-            <h3 class="servicio__title">Título 4</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos 
-              dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum 
-              donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam.
-            </p>
+            <p>El entorno online se reinventa. Es por eso que nuestra tarea es comunicar una idea apta para determinadas narrativas.</p>
           </div>
         </div>
       </div>

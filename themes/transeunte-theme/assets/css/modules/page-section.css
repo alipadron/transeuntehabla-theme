@@ -64,6 +64,19 @@
       font-size: 1.5rem;
       font-weight: 400;
     }
+
+    &--white {
+      color: #FFF;
+    }
+
+    &--fixed-width-at-large {
+      @mixin atLarge {
+        width: 800px;
+        position: relative;
+        transform: translateX(-50%);
+        left: 50%;
+      }
+    }
     
   }
 }

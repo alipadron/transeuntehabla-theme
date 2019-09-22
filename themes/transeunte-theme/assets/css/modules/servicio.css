@@ -1,12 +1,15 @@
-.que-hacemos-item {
-
+.servicio {
+  text-align: center;
   &__title {
     font-size: 1.5rem;
     margin: 0;
 
     @mixin atLarge {
-      font-size: 2.5rem;
       margin: 0;
+    }
+
+    &__line {
+      text-decoration: underline $mainBlue;
     }
   }
 }

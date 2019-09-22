@@ -679,16 +679,33 @@ a {
     
   }
   }
-.que-hacemos-item__title {
+.page-section__description--white {
+      color: #FFF;
+    }
+@media (min-width: 992px) {
+.page-section__description--fixed-width-at-large {
+        width: 800px;
+        position: relative;
+        transform: translateX(-50%);
+        left: 50%
+    }
+  }
+.servicio {
+  text-align: center;
+}
+.servicio__title {
     font-size: 1.5rem;
     margin: 0;
   }
 @media (min-width: 992px) {
-.que-hacemos-item__title {
-      font-size: 2.5rem;
+.servicio__title {
       margin: 0
   }
   }
+.servicio__title__line {
+      -webkit-text-decoration: underline #00F9FF;
+              text-decoration: underline #00F9FF;
+    }
 .generic-content-container {
   font-weight: 300;
 }
