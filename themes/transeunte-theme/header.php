@@ -27,9 +27,9 @@
         <div class="header__menu-content">
           <nav class="header__menu-content__navigation">
             <ul>
-              <li><a href="#transeuntes">Transeúntes</a></li>
-              <li><a href="#que-hacemos">¿Qué hacemos?</a></li>
               <li><a href="#orgia-cultural">Orgía cultural</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#transeuntes">Transeúntes</a></li>
               <li>
                 <a href="<?php echo esc_url(site_url('/blog')) ?>">Blog</a>
                 </li>

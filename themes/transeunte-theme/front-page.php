@@ -39,122 +39,6 @@ while(have_posts()) { the_post();
     </div>
   </section>
   <!-- Portada -->
-  
-  <!-- Transeúntes -->
-  <section class="page-section page-section--transeuntes" id="transeuntes">
-    <div 
-      class="wrapper wrapper--no-padding-until-large generic-content-container generic-content-container--gray"
-    >
-      <h2 class="page-section__title page-section__title--italic">
-        Transeúntes
-      </h2>
-      <div class="wrapper">
-        <p class="page-section__description">El equipo de Transeúnte está conformado por tres profesionales que buscan generar ruido y alboroto 
-        consciente en la sociedad mediante la cultura como la expresión más humana de los individuos.</p>
-      </div>
-      <div class="row row--gutters row--equal-height-at-large">
-        <div class="row__large-4">
-          <div class="transeunte">
-            <div class="transeunte__photo">
-              <img
-                src="
-                <?php 
-                  echo get_theme_file_uri('assets/images/jesus-konde.jpg');
-                ?>"
-                alt="Jesús Konde"
-                title="Jesús Konde"
-              >
-            </div>
-            <h3 class="transeunte__title">Jesús Konde</h3>
-            <p class="transeunte__description">Artista visual con experiencia en el desarrollo de la identidad para marcas, eventos y 
-            proyectos vinculados con el sector cultural. Ha trabajado con el diseño editorial y 
-            publicitario para redes sociales.</p>
-          </div>
-        </div>
-        <div class="row__large-4">
-          <div class="transeunte">
-            <div class="transeunte__photo">
-              <img
-                src="
-                <?php
-                  echo get_theme_file_uri('assets/images/maria-laura.jpg');
-                ?>"
-                alt="María Laura Padrón"
-                title="María Laura Padrón"
-              >
-            </div>
-            <h3 class="transeunte__title">María Padrón</h3>
-            <p class="transeunte__description">Es periodista enfocada en la literatura. Ha escrito entrevistas, reportajes y crónicas en las principales revistas y periódicos de Venezuela. En España se está conociendo su trabajo no solo por su aporte periodístico en medios digitales, sino gracias a la organización de presentaciones de libros y sus respectivas giras de medios, así como la participación en proyectos de gestión cultural.</p>
-          </div>
-        </div>
-        <div class="row__large-4">
-          <div class="transeunte">
-            <div class="transeunte__photo">
-              <img
-                src="
-                <?php
-                  echo get_theme_file_uri('assets/images/luis-felipe.jpg');
-                ?>"
-                alt="Luis Felipe Hernández"
-                title="Luis Felipe Hernández"
-              >
-            </div>
-            <h3 class="transeunte__title">Luis Hernández</h3>
-            <p class="transeunte__description">Es comunicador y melómano. Ha escrito reportajes, crónicas y entrevistas para medios de comunicación de relevancia en Venezuela y una de tinte internacional (especializada en música como lo es Noisey de la Vice). Desde hace dos años se ha enfocado en el marketing digital aplicando estrategias y redacción de contenido para diferentes sectores del mercado en Estados Unidos y Colombia.</p>
-          </div>
-        </div>
-      </div>
-      
-      
-      
-      
-      
-    </div>
-  </section>
-  <!-- Transeúntes -->
-
-  <!-- ¿Qué hacemos? -->
-  <section class="page-section page-section--dark-gray" id="que-hacemos">
-    <div class="wrapper">
-      <h2 class="page-section__title page-section__title--italic page-section__title--blue">
-        ¿Qué <strong>hacemos?</strong>
-      </h2>
-      <div class="row row--gutters generic-content-container generic-content-container--white">
-        <div class="row__medium-6">
-          <div class="que-hacemos-item">
-            <h3 class="que-hacemos-item__title">Título 1</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos 
-              dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam.
-            </p>
-          </div>
-          <div class="que-hacemos-item">
-            <h3 class="que-hacemos-item__title">Título 2</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam.
-            </p>
-          </div>
-        </div>
-        <div class="row__medium-6">
-          <div class="que-hacemos-item">
-            <h3 class="que-hacemos-item__title">Título 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos 
-              dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum 
-              donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam.
-            </p>
-          </div>
-          <div class="que-hacemos-item">
-            <h3 class="que-hacemos-item__title">Título 4</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos 
-              dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum 
-              donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ¿Qué hacemos? -->
 
   <!-- Orgía cultural -->
   <section class="page-section" id="orgia-cultural">
@@ -213,5 +97,129 @@ while(have_posts()) { the_post();
     </div>
   </section>
   <!-- Orgía cultural -->
+
+  <!-- Servicios -->
+  <section class="page-section page-section--dark-gray" id="servicios">
+    <div class="wrapper">
+      <h2 class="page-section__title page-section__title--italic page-section__title--blue">
+        Servicios
+      </h2>
+      <div class="row row--gutters generic-content-container generic-content-container--white">
+        <div class="row__medium-6">
+          <div class="servicio">
+            <h3 class="servicio__title">Título 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos 
+              dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam.
+            </p>
+          </div>
+          <div class="servicio">
+            <h3 class="servicio__title">Título 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam.
+            </p>
+          </div>
+        </div>
+        <div class="row__medium-6">
+          <div class="servicio">
+            <h3 class="servicio__title">Título 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos 
+              dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum 
+              donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam.
+            </p>
+          </div>
+          <div class="servicio">
+            <h3 class="servicio__title">Título 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit sodales lobortis iaculis inceptos 
+              dictum, risus quis congue in cubilia. Potenti eleifend hendrerit sociis nostra tellus interdum 
+              donec, dapibus tempor mi integer accumsan lacinia, rutrum magnis vehicula auctor cursus quam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Servicios -->
+  
+  <!-- Transeúntes -->
+  <section class="page-section page-section--transeuntes" id="transeuntes">
+    <div 
+      class="wrapper wrapper--no-padding-until-large generic-content-container generic-content-container--gray"
+    >
+      <h2 class="page-section__title page-section__title--italic">
+        Transeúntes
+      </h2>
+      <div class="wrapper">
+        <p class="page-section__description">El equipo de Transeúnte está conformado por tres profesionales que buscan generar ruido y alboroto 
+        consciente en la sociedad mediante la cultura como la expresión más humana de los individuos.</p>
+      </div>
+      <div class="row row--gutters row--equal-height-at-large">
+        <div class="row__large-4">
+          <div class="transeunte">
+            <div class="transeunte__photo">
+              <img
+                src="
+                <?php 
+                  echo get_theme_file_uri('assets/images/jesus-konde.jpg');
+                ?>"
+                alt="Jesús Konde"
+                title="Jesús Konde"
+              >
+            </div>
+            <h3 class="transeunte__title">Jesús Konde</h3>
+            <p class="transeunte__description">Artista visual con experiencia en el desarrollo de la identidad para marcas, 
+            eventos y proyectos vinculados con el sector cultural. Además he trabajado como diseñador editorial y publicitario 
+            pero como el arte es heterodoxo, busco dejar mi esencia en cualquier proyecto que sea coherente. No importa el medio.</p>
+          </div>
+        </div>
+        <div class="row__large-4">
+          <div class="transeunte">
+            <div class="transeunte__photo">
+              <img
+                src="
+                <?php
+                  echo get_theme_file_uri('assets/images/maria-laura.jpg');
+                ?>"
+                alt="María Laura Padrón"
+                title="María Laura Padrón"
+              >
+            </div>
+            <h3 class="transeunte__title">María Laura Padrón</h3>
+            <p class="transeunte__description">Periodista con predilección hacia la literatura. Desde hace cuatro años malabareo el arte de escribir, 
+            conceptualizar, organizar y entrevistar. Cada acción ha sido una experiencia reflejada en prensa digital e impresa; en presentaciones de 
+            libros y otros eventos culturales en Valencia-Venezuela y Madrid-España.</p>
+          </div>
+        </div>
+        <div class="row__large-4">
+          <div class="transeunte">
+            <div class="transeunte__photo">
+              <img
+                src="
+                <?php
+                  echo get_theme_file_uri('assets/images/luis-felipe.jpg');
+                ?>"
+                alt="Luis Felipe Hernández"
+                title="Luis Felipe Hernández"
+              >
+            </div>
+            <h3 class="transeunte__title">Luis Felipe Hernández</h3>
+            <p class="transeunte__description">Comunicador por naturaleza y periodista ante la ley. No se trata solamente de informar, 
+            educar y entretener sino de contar. Mi filosofía de trabajo emprende la búsqueda de detalles para convertirlos en un valor agregado, 
+            eso trato de llevarlo a cabo en el periodismo y la redacción de contenido.</p>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+    </div>
+  </section>
+  <!-- Transeúntes -->
+
+  
+
+  
 
 <?php } get_footer(); ?>
