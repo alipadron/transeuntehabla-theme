@@ -30,6 +30,8 @@
               <li><a href="#">Cuentos</a></li>
               <li><a href="#">Entrevistas</a></li>
               <li><a href="#">Listas</a></li>
+              <li><a href="#">Editoriales</a></li>
+              <li><a href="#">Artículos</a></li>
             </ul>
           </nav>
           <!-- <div class="header__menu-content__btn-container">

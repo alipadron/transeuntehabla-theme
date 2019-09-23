@@ -58,14 +58,22 @@ get_header('blog');
                       src="<?php echo get_the_post_thumbnail_url( get_the_id(), 'postLandscapeExtraSmall'); ?>"
                     >
                   </picture>
-                  <div class="blog-posts__others__post__text wrapper wrapper--keep-padding generic-content-container">
+                  <div class="wrapper wrapper--keep-padding generic-content-container">
+                    <h2 class="blog-posts__others__post__title">
+                      <a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a>
+                    </h2>
+                    <p class="blog-posts__others__post__content">
+                      <?php echo wp_trim_words(get_the_content(), 18); ?>
+                    </p>
+                  </div>
+                  <!-- <div class="blog-posts__others__post__text wrapper wrapper--keep-padding generic-content-container">
                     <h2 class="blog-posts__others__post__text__title">
                       <a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a>
                     </h2>
                     <p class="blog-posts__others__post__text__content">
                       <?php echo wp_trim_words(get_the_content(), 18); ?>
                     </p>
-                  </div>
+                  </div> -->
                 </article>
               </div>           
       <?php
