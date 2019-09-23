@@ -63,17 +63,9 @@ get_header('blog');
                       <a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a>
                     </h2>
                     <p class="blog-posts__others__post__content">
-                      <?php echo wp_trim_words(get_the_content(), 18); ?>
+                      <?php echo has_excerpt() ? get_the_excerpt() : wp_trim_words(get_the_content(), 18); ?>
                     </p>
                   </div>
-                  <!-- <div class="blog-posts__others__post__text wrapper wrapper--keep-padding generic-content-container">
-                    <h2 class="blog-posts__others__post__text__title">
-                      <a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a>
-                    </h2>
-                    <p class="blog-posts__others__post__text__content">
-                      <?php echo wp_trim_words(get_the_content(), 18); ?>
-                    </p>
-                  </div> -->
                 </article>
               </div>           
       <?php
@@ -113,7 +105,7 @@ get_header('blog');
                     <a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a>
                   </h2>
                   <p class="blog-posts__most-recent__text__content">
-                    <?php echo wp_trim_words(get_the_content(), 18); ?>
+                    <?php echo has_excerpt() ? get_the_excerpt() : wp_trim_words(get_the_content(), 18); ?>
                   </p>
                   <p class="blog-posts__most-recent__text__meta-info">
                     <span><?php echo get_the_category_list(', '); ?></span> - 
@@ -178,7 +170,7 @@ get_header('blog');
                 <a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a>
               </h2>
               <p class="featured-posts__post__text__content">
-                <?php echo wp_trim_words(get_the_content(), 18); ?>
+                <?php echo has_excerpt() ? get_the_excerpt() : wp_trim_words(get_the_content(), 18); ?>
                 <a href="<?php echo get_the_permalink() ?>">Leer más</a>
               </p>
             </div>
