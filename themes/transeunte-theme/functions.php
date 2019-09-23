@@ -5,7 +5,7 @@
       'transeunte_main_js',
       get_theme_file_uri('assets/js/scripts-bundled.js'),
       NULL,
-      microtime(),
+      1,
       true
     );
     wp_enqueue_style(
@@ -20,7 +20,7 @@
       'transeunte_main_styles',
       get_stylesheet_uri(),
       NULL,
-      microtime()
+      1
     );
     /* wp_localize_script(
       'transeunte_main_js',
