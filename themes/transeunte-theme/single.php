@@ -38,7 +38,7 @@ get_header('blog');
         <section class="post-content">
           <div class="social-icons social-icons--blog-post social-icons--background-red">
             <?php
-              $url = str_replace('localhost/transeuntehabla', 'transeuntehabla.com', get_the_permalink());
+              $url = get_the_permalink();
               $title = get_the_title();
               $summary = wp_trim_words(get_the_content(), 18);
               $linkedInParameters = http_build_query(array(
