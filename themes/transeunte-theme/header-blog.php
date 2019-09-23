@@ -12,7 +12,7 @@
     <header class="header header--white header--shadow">
       <div class="wrapper">
         <div class="header__logo">
-          <a href="<?php echo site_url(); ?>">
+          <a href="<?php echo site_url('blog'); ?>">
             <img
               src="<?php echo get_theme_file_uri('assets/images/logo-medium.png') ?>"
               alt="Transeúnte Logo"
