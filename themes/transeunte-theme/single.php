@@ -40,7 +40,7 @@ get_header('blog');
             <?php
               $url = get_the_permalink();
               $title = get_the_title();
-              $summary = has_excerpt() : wp_trim_words(get_the_content(), 18) : get_the_excerpt();
+              $summary = has_excerpt() ? wp_trim_words(get_the_content(), 18) : get_the_excerpt();
               $linkedInParameters = http_build_query(array(
                 'mini' => true,
                 'url' => $url,
