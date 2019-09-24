@@ -114,7 +114,9 @@ get_header('blog');
                   class="post-content__author__image"
                   src="
                   <?php
-                    echo get_theme_file_uri('assets/images/maria-laura-padron.jpg');
+                    echo get_avatar_url(get_the_author_meta('ID'), array(
+                      'size' => 160
+                    ));
                   ?>"
                   alt="María Laura Padrón"
                   title="María Laura Padrón"
@@ -124,16 +126,13 @@ get_header('blog');
                 <div class="post-content__author__text">
                   <h3 class="post-content__author__text__name"><?php echo get_the_author(); ?></h3>
                   <p class="post-content__author__text__bio">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet
-                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim
-                    veniam, quis nostrud exerci tation.
+                    <?php echo get_the_author_description(); ?>
                   </p>
-                  <div class="post-content__author__text__social-icons">
+                  <!-- <div class="post-content__author__text__social-icons">
                     <a href="https://www.instagram.com/malaupadron/"><i class="fa fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/marialaurapadron/"><i class="fa fa-linkedin"></i></a>
                     <a href="https://twitter.com/malaupadron/"><i class="fa fa-twitter"></i></a>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
