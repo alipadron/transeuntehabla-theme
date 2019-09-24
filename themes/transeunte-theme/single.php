@@ -22,7 +22,7 @@ get_header('blog');
 
 <!-- Posts -->
   <div class="wrapper wrapper--no-padding-until-large">
-    <div class="meta-info">
+    <!-- <div class="meta-info">
       <p class="meta-info__text">
         <?php echo get_the_category_list(', ') . ' ' . get_the_date('d/m/Y'); ?>
         por
@@ -30,7 +30,7 @@ get_header('blog');
           <?php echo get_the_author(); ?>
         </a>
       </p>
-    </div>
+    </div> -->
     
     <div class="row row--gutters-large">
       <!-- Contenido del post -->
@@ -50,7 +50,7 @@ get_header('blog');
               ));
               $twitterParameters = http_build_query(array(
                 'url' => $url,
-                'text' => 'Mira este post',
+                'text' => $title,
                 'hashtags' => 'transeunte,transeuntehabla'
               ));
               $whatsappParameters = http_build_query(array(
