@@ -110,6 +110,38 @@ get_header('blog');
           <div class="post-content__text generic-content-container wrapper">
             <?php the_content(); ?>
           </div>
+
+          <div class="post-content__author">
+            <div class="row row--gutters-large">
+              <div class="row__medium-4">
+                <img
+                  class="post-content__author__image"
+                  src="
+                  <?php
+                    echo get_theme_file_uri('assets/images/maria-laura-padron.jpg');
+                  ?>"
+                  alt="María Laura Padrón"
+                  title="María Laura Padrón"
+                >  
+              </div>
+              <div class="row__medium-8">
+                <div class="post-content__author__text">
+                  <h3 class="post-content__author__text__name"><?php echo get_the_author(); ?></h3>
+                  <p class="post-content__author__text__bio">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet
+                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                    veniam, quis nostrud exerci tation.
+                  </p>
+                  <div class="post-content__author__text__social-icons">
+                    <a href="https://www.instagram.com/malaupadron/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/marialaurapadron/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://twitter.com/malaupadron/"><i class="fa fa-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
       <!-- Contenido del post -->
@@ -181,8 +213,6 @@ get_header('blog');
   <a href="https://www.instagram.com/transeuntehabla/"><i class="fa fa-instagram"></i></a>
   <a href="https://www.linkedin.com/company/transeuntehabla"><i class="fa fa-linkedin"></i></a>
   <a href="https://www.facebook.com/transeuntehabla"><i class="fa fa-facebook"></i></a>
-  
-  
 </div>
 
 </main>

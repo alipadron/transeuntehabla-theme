@@ -17,4 +17,56 @@
       text-decoration: underline;
     }
   }
+
+  &__author {
+    background-color: $darkGray;
+    padding: 2rem 0;
+    position: relative;
+
+    &__image {
+      text-align: center;
+      display: block;
+      width: 160px;
+      border-radius: 100%;
+      margin: 0 auto;
+    }
+
+    &__text {
+      color: $lightGray;
+      text-align: center;
+      padding: 0 20px;
+      @mixin atMedium {
+        text-align: left;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0;
+        padding-left: 0;
+      }
+      &__name {
+        margin: 0;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
+
+      &__bio {
+        margin: 1rem 0;
+        font-weight: 300;
+      }
+
+      &__social-icons {
+        a {
+          color: $mainRed;
+          margin-right: 1rem;
+        }
+
+        a:last-child {
+          margin-right: 0;
+        }
+        a:hover {
+          color: #FFF;
+        }
+      }
+    }
+  }
 }
