@@ -22,15 +22,11 @@ get_header('blog');
 
 <!-- Posts -->
   <div class="wrapper wrapper--no-padding-until-large">
-    <!-- <div class="meta-info">
+    <div class="meta-info">
       <p class="meta-info__text">
-        <?php echo get_the_category_list(', ') . ' ' . get_the_date('d/m/Y'); ?>
-        por
-        <a href="<?php echo get_author_posts_url(get_the_author_ID()); ?>">
-          <?php echo get_the_author(); ?>
-        </a>
+        <a href="<?php echo site_url('/blog'); ?>">Blog</a> > <?php echo get_the_title(); ?>
       </p>
-    </div> -->
+    </div>
     
     <div class="row row--gutters-large">
       <!-- Contenido del post -->
