@@ -1065,6 +1065,12 @@ a {
 .blog-posts__most-recent__text__meta-info span a {
         color: #D30032;
       }
+.blog-posts__others > div {
+      margin-bottom: 2rem;
+    }
+.blog-posts__others > div:last-child {
+      margin-bottom: 0;
+    }
 .blog-posts__others__post {
       width: 100%;
       margin-bottom: 2rem;
