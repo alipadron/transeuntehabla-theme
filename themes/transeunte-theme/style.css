@@ -513,8 +513,9 @@ a {
       background-color: #D30032;
       text-transform: uppercase;
       display: inline-block;
-      padding: 0.25rem 0.25rem 0 0.25rem;
+      padding: .25rem .5rem 0 .25rem;
       color: #1E1E1E;
+      border-radius: .25rem;
     }
 @media (min-width: 576px) {
 .portada__contenido__descripcion {
@@ -631,14 +632,14 @@ a {
       display: flex;
     }
 .page-section {
-  padding: 5rem 0 0;
+  padding: 2.5rem 0;
 }
 .page-section--transeuntes {
     background: #E0E0E0;
   }
 @media (min-width: 992px) {
 .page-section {
-    padding-bottom: 2.5rem
+    /* padding-bottom: 2.5rem; */
 
     /*&--transeuntes {
       background: url('assets/images/transeuntes.jpg') top center no-repeat;
@@ -796,6 +797,7 @@ a {
       color: #FFF;
       display: inline-block;
       cursor: pointer;
+      padding-bottom: .25rem;
     }
 .orgia-cultural-item__content__container {
       display: none;

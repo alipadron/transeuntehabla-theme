@@ -32,6 +32,7 @@
       color: #FFF;
       display: inline-block;
       cursor: pointer;
+      padding-bottom: .25rem;
     }
 
     &__container {

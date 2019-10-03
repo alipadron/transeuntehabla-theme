@@ -1,12 +1,12 @@
 .page-section {
-  padding: 5rem 0 0;
+  padding: 2.5rem 0;
 
   &--transeuntes {
     background: $lightGray;
   }
 
   @mixin atLarge {
-    padding-bottom: 2.5rem;
+    /* padding-bottom: 2.5rem; */
 
     /*&--transeuntes {
       background: url('assets/images/transeuntes.jpg') top center no-repeat;
