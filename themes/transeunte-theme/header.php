@@ -36,7 +36,7 @@
             </ul>
           </nav>
           <div class="header__menu-content__btn-container">
-            <a class="btn" href="#">Contacto</a>
+            <a class="btn open-modal" href="#">Contacto</a>
           </div>
         </div>
       </div>

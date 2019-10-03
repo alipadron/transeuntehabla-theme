@@ -221,7 +221,7 @@ while(have_posts()) { the_post();
   <!-- Transeúntes -->
 
   <!-- Contacto -->
-  <div class="modal modal--is-visible">
+  <div class="modal">
     <div class="modal__inner">
       <h2 class="section-title section-title--blue section-title--less-margin">
         <span class="icon icon--mail section-title__icon"></span> Get in
