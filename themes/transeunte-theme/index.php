@@ -138,7 +138,7 @@ get_header('blog');
         <section class="featured-posts">
       <?php
         $featuredPosts = new WP_Query(array(
-          'posts_per_page' => 1,
+          'posts_per_page' => 2,
           'post_type' => 'post',
         ));
         while ($featuredPosts->have_posts()) {
