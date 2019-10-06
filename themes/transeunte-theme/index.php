@@ -162,16 +162,15 @@ get_header('blog');
         $featuredPosts = new WP_Query(array(
           'posts_per_page' => 2,
           'post_type' => 'post',
+          'meta_key' => 'post_views_count',
+          'orderby' => 'meta_value_num',
+          'order' => 'DESC'
         ));
         while ($featuredPosts->have_posts()) {
           $featuredPosts->the_post();
       ?>
+        <a href="<?php echo get_the_permalink(); ?>">
           <article class="featured-posts__post generic-content-container">
-            <?php /* the_post_thumbnail('thumbnail', array(
-                    'title' => get_the_title(get_post_thumbnail_id(get_the_id())),
-                    'class' => 'featured-posts__post__image'
-                  )); */
-            ?>
             <picture>
               <source
                 media="(min-width: 992px)"
@@ -197,15 +196,16 @@ get_header('blog');
             </p>
             <div class="featured-posts__post__text wrapper">
               <h2 class="featured-posts__post__text__title">
-                <a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a>
+              <?php echo get_the_title(); ?>
+                <!-- <a href="<?php echo get_the_permalink(); ?>"></a> -->
               </h2>
-              <p class="featured-posts__post__text__content">
+              <!-- <p class="featured-posts__post__text__content">
                 <?php echo has_excerpt() ? get_the_excerpt() : wp_trim_words(get_the_content(), 18); ?>
                 <a href="<?php echo get_the_permalink() ?>">Leer más</a>
-              </p>
+              </p> -->
             </div>
-            
           </article>
+          </a>
       <?php
         }
       ?>

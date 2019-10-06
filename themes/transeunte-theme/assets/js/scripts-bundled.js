@@ -155,6 +155,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./themes/transeunte-theme/assets/js/modules/PostsDestacados.js":
+/*!**********************************************************************!*\
+  !*** ./themes/transeunte-theme/assets/js/modules/PostsDestacados.js ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return PostsDestacados; });\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nvar $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\nvar PostsDestacados =\n/*#__PURE__*/\nfunction () {\n  function PostsDestacados() {\n    _classCallCheck(this, PostsDestacados);\n\n    this.postsDestacados = $(\".featured-posts__post\");\n    this.events();\n  }\n\n  _createClass(PostsDestacados, [{\n    key: \"events\",\n    value: function events() {\n      var that = this;\n      this.postsDestacados.each(function registerPostHover() {\n        $(this).hover(that.handlePostHover);\n      });\n    }\n  }, {\n    key: \"handlePostHover\",\n    value: function handlePostHover(event) {\n      $(event.target).closest('.featured-posts__post').find('.featured-posts__post__text').toggleClass('featured-posts__post__text--is-visible');\n    }\n  }]);\n\n  return PostsDestacados;\n}();\n\n\n\n//# sourceURL=webpack:///./themes/transeunte-theme/assets/js/modules/PostsDestacados.js?");
+
+/***/ }),
+
 /***/ "./themes/transeunte-theme/assets/js/scripts.js":
 /*!******************************************************!*\
   !*** ./themes/transeunte-theme/assets/js/scripts.js ***!
@@ -163,7 +175,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_OrgiaCultural__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/OrgiaCultural */ \"./themes/transeunte-theme/assets/js/modules/OrgiaCultural.js\");\n/* harmony import */ var _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/MobileMenu */ \"./themes/transeunte-theme/assets/js/modules/MobileMenu.js\");\n/* harmony import */ var _modules_Modal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/Modal */ \"./themes/transeunte-theme/assets/js/modules/Modal.js\");\n// 3rd party packages from NPM\n\n\n\n\n__webpack_require__(/*! lightgallery.js */ \"./node_modules/lightgallery.js/lib/js/lightgallery.js\");\n\nlightGallery(document.getElementById('gallery'), {\n  selector: '.item'\n});\nvar orgiaCultural = new _modules_OrgiaCultural__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\nvar mobileMenu = new _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\nvar modal = new _modules_Modal__WEBPACK_IMPORTED_MODULE_2__[\"default\"]();\n\n//# sourceURL=webpack:///./themes/transeunte-theme/assets/js/scripts.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_OrgiaCultural__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/OrgiaCultural */ \"./themes/transeunte-theme/assets/js/modules/OrgiaCultural.js\");\n/* harmony import */ var _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/MobileMenu */ \"./themes/transeunte-theme/assets/js/modules/MobileMenu.js\");\n/* harmony import */ var _modules_Modal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/Modal */ \"./themes/transeunte-theme/assets/js/modules/Modal.js\");\n/* harmony import */ var _modules_PostsDestacados__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/PostsDestacados */ \"./themes/transeunte-theme/assets/js/modules/PostsDestacados.js\");\n// 3rd party packages from NPM\n\n\n\n\n\n__webpack_require__(/*! lightgallery.js */ \"./node_modules/lightgallery.js/lib/js/lightgallery.js\");\n\nlightGallery(document.getElementById('gallery'), {\n  selector: '.item'\n});\nvar orgiaCultural = new _modules_OrgiaCultural__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\nvar mobileMenu = new _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\nvar modal = new _modules_Modal__WEBPACK_IMPORTED_MODULE_2__[\"default\"]();\nvar postsDestacados = new _modules_PostsDestacados__WEBPACK_IMPORTED_MODULE_3__[\"default\"]();\n\n//# sourceURL=webpack:///./themes/transeunte-theme/assets/js/scripts.js?");
 
 /***/ })
 

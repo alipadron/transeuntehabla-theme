@@ -5,6 +5,11 @@
     border-left: #000 solid .5px;
   }
   &__post {
+    margin-bottom: 2rem;
+    position: relative;
+    @mixin atLarge {
+      margin-bottom: 1rem;
+    }
     &__image {
       display: block;
       width: 100%;
@@ -20,13 +25,30 @@
       font-size: .75rem;
     }
     &__text {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      background-color: rgba($darkGray, .3);
+      display: block;
+      text-align: center;
+
+      @mixin atLarge {
+        display: none;
+      }
+
+      &--is-visible {
+        display: block;
+      }
+
       &__title {
         text-transform: uppercase;
-        margin: 1rem 0 0;
-        color: $darkGray;
-
-        a {
-          color: $darkGray;
+        margin: 0;
+        color: $lightGray;
+        font-size: 1rem;
+        @mixin atLarge {
+          font-size: .75rem;
         }
       }
   

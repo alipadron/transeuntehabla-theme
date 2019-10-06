@@ -1,5 +1,6 @@
 <?php
 get_header('blog');
+transeunte_set_post_view();
 ?>
 <main class="main-blog">
 <!-- Título del post -->

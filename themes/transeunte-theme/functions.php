@@ -49,4 +49,34 @@
     add_image_size('postPortraitLarge', 150, 300, true);
   }
   add_action('after_setup_theme', 'transeunte_features');
+
+  function transeunte_post_views() {
+    $count = (int) get_post_meta( get_the_ID(), 'post_views_count', true );
+    echo "$count views";
+  }
+
+  function transeunte_get_post_views() {
+    return get_post_meta( get_the_ID(), 'post_views_count', true );
+  }
+
+  function transeunte_set_post_view() {
+    $key = 'post_views_count';
+    $post_id = get_the_ID();
+    $count = (int) get_post_meta( $post_id, $key, true );
+    $count++;
+    update_post_meta( $post_id, $key, $count );
+  }
+
+  function transeunte_posts_column_views( $columns ) {
+    $columns['post_views'] = 'Views';
+    return $columns;
+  }
+
+  function transeunte_posts_custom_column_views( $column ) {
+    if ( $column === 'post_views') {
+      transeunte_post_views();
+    }
+  }
+  add_filter( 'manage_posts_columns', 'transeunte_posts_column_views' );
+  add_action( 'manage_posts_custom_column', 'transeunte_posts_custom_column_views' );
   
