@@ -52,7 +52,7 @@
 
   function transeunte_post_views() {
     $count = (int) get_post_meta( get_the_ID(), 'post_views_count', true );
-    echo "$count views";
+    echo "$count vistas";
   }
 
   function transeunte_get_post_views() {
@@ -68,7 +68,7 @@
   }
 
   function transeunte_posts_column_views( $columns ) {
-    $columns['post_views'] = 'Views';
+    $columns['post_views'] = 'Vistas';
     return $columns;
   }
 
