@@ -4,7 +4,29 @@ get_header('blog');
 <main class="main-blog">
 <!-- Título del blog -->
 <section class="page-banner">
-  <div class="wrapper">
+  <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="<?php echo get_theme_file_uri('assets/images/portada-blog--extra-large.jpg'); ?>"
+      >
+      <source
+        media="(min-width: 992px)"
+        srcset="<?php echo get_theme_file_uri('assets/images/portada-blog--large.jpg'); ?>"
+      >
+      <source
+        media="(min-width: 768px)"
+        srcset="<?php echo get_theme_file_uri('assets/images/portada-blog--medium.jpg'); ?>"
+      >
+      <source
+        media="(min-width: 576px)"
+        srcset="<?php echo get_theme_file_uri('assets/images/portada-blog--small.jpg'); ?>"
+      >
+      <img
+        class="page-banner__image"
+        src="<?php echo get_theme_file_uri('assets/images/portada-blog--extra-small.jpg'); ?>"
+      >
+    </picture>
+  <!-- <div class="wrapper">
     <h1 class="page-banner__title">
       Calle de las opiniones
     </h1>
@@ -12,7 +34,7 @@ get_header('blog');
       Transitamos sin
       <span class="page-banner__subtitle__line">cesar</span>
     </p>
-  </div>
+  </div> -->
 </section>
 <!-- Título del blog -->
 

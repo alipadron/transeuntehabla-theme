@@ -982,6 +982,7 @@ a {
   text-transform: uppercase;
   color: #1E1E1E;
   position: relative;
+  
   margin-bottom: 1rem;
   
 }
@@ -1003,6 +1004,10 @@ a {
   }
 .page-banner__line {
     border-bottom: .25rem solid #D30032;
+  }
+.page-banner__image {
+    width: 100%;
+    display: block;
   }
 .post__title {
 

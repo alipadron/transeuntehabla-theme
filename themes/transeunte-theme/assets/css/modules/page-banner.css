@@ -4,6 +4,7 @@
   text-transform: uppercase;
   color: $darkGray;
   position: relative;
+  
   margin-bottom: 1rem;
 
   
@@ -27,6 +28,11 @@
   }
   &__line {
     border-bottom: .25rem solid $mainRed;
+  }
+
+  &__image {
+    width: 100%;
+    display: block;
   }
   
 }
