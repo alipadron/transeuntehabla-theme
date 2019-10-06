@@ -28,12 +28,12 @@ while(have_posts()) { the_post();
     </picture>
     <div class="portada__contenido">
       <div class="wrapper">
-        <h1 class="portada__contenido__titulo">La calle habla</h1>
+        <h1 class="portada__contenido__titulo"><?php echo get_field('titulo'); ?></h1>
         <h2 class="portada__contenido__subtitulo">
-          ¡Todo un viaje por la ciudad de experiencias interminables!
+        <?php echo get_field('subtitulo'); ?>
         </h2>
         <p class="portada__contenido__descripcion">
-          Agencia de contenidos culturales
+        <?php echo get_field('descripcion'); ?>
         </p>
       </div>
     </div>
