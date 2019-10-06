@@ -129,11 +129,29 @@ transeunte_set_post_view();
                   <p class="post-content__author__text__bio">
                     <?php echo get_the_author_description(); ?>
                   </p>
-                  <!-- <div class="post-content__author__text__social-icons">
-                    <a href="https://www.instagram.com/malaupadron/"><i class="fa fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/marialaurapadron/"><i class="fa fa-linkedin"></i></a>
-                    <a href="https://twitter.com/malaupadron/"><i class="fa fa-twitter"></i></a>
-                  </div> -->
+                  
+                  <div class="post-content__author__text__social-icons">
+                  <?php
+                    $authorSocialLinks = array(
+                      'facebook' => get_the_author_meta('facebook'),
+                      'instagram' => get_the_author_meta('instagram'),
+                      'linkedin' => get_the_author_meta('linkedin'),
+                      'pinterest' => get_the_author_meta('pinterest'),
+                      'soundcloud' => get_the_author_meta('soundcloud'),
+                      'tumblr' => get_the_author_meta('tumblr'),
+                      'twitter' => 'https://twitter.com/' . get_the_author_meta('twitter'),
+                      'youtube' => get_the_author_meta('youtube')
+                    );
+                    foreach($authorSocialLinks as $socialNetwork => $url) {
+                      if ($url) {
+                  ?>
+                    <a href="<?php echo $url; ?>"><i class="fa fa-<?php echo $socialNetwork; ?>"></i></a>
+                  <?php
+                      }
+                    }
+                    $twitterUrl = get_the_author_meta('twitter');
+                  ?>
+                  </div>
                 </div>
               </div>
             </div>
