@@ -25,7 +25,7 @@ transeunte_set_post_view();
   <div class="wrapper wrapper--no-padding-until-large">
     <div class="meta-info">
       <p class="meta-info__text">
-        <a href="<?php echo site_url('/blog'); ?>">Blog</a> > <?php echo get_the_title(); ?>
+        <a href="<?php echo site_url('/blog'); ?>">Ir al blog</a>
       </p>
     </div>
     
