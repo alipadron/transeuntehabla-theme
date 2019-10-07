@@ -222,24 +222,26 @@ while(have_posts()) { the_post();
 
   <!-- Contacto -->
   <div class="modal">
-    <div class="modal__inner">
-      <h2 class="section-title section-title--blue section-title--less-margin">
-        <span class="icon icon--mail section-title__icon"></span> Get in
-        <strong>Touch</strong>
-      </h2>
-      <div class="wrapper wrapper--narrow">
-        <p class="modal__description">
-          We will have an online order system in place soon. Until then, connect with us on any of
-          the platforms below!
-        </p>
+  <div class="modal__inner">
+    <div class="wrapper">
+      <div class="row row--gutters-small">
+        <div class="row__large-4">
+          <div class="modal__text">
+            <p class="modal__text--large modal__text--white modal__text--bold modal__text--narrow modal__text--italic">"Queremos unirnos con otros que andan por allí en un caminar constante".</p>
+            <p class="modal__text--red">¡Encontrémonos!</p>
+            <p class="modal__text--light-gray">
+              +34 625 43 7696 <br>
+              +58 424 463 2964 <br>
+              info@transeuntehabla.com</p>
+          </div>
+          
+        </div>
+        <div class="row__large-8"></div>
       </div>
-      <div class="social-icons">
-        <a href="#" class="social-icons__icon"><span class="icon icon--facebook"></span></a>
-        <a href="#" class="social-icons__icon"><span class="icon icon--twitter"></span></a>
-        <a href="#" class="social-icons__icon"><span class="icon icon--instagram"></span></a>
-        <a href="#" class="social-icons__icon"><span class="icon icon--youtube"></span></a>
-      </div>
+      
     </div>
+  </div>
+    
     <div class="modal__close">X</div>
   </div>
   <!-- Contacto -->

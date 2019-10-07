@@ -1,7 +1,7 @@
 .modal {
     position: fixed;
     z-index: 5;
-    background-color: rgba(255, 255, 255, .94);
+    background-color: rgba($darkGray, .94);
     top: 0;
     bottom: 0;
     left: 0;
@@ -17,11 +17,46 @@
       transform: scale(1);
     }
   
-    &__description {
+    &__text {
       text-align: center;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       font-weight: 300;
-      line-height: 1.65;
+
+      @mixin atLarge {
+        text-align: right;
+      }
+
+      &--large {
+        font-size: 3rem;
+      }
+
+      &--light-gray {
+        color: $lightGray;
+      }
+
+      &--italic {
+        font-style: italic;
+      }
+
+      &--narrow {
+        line-height: .9;
+      }
+
+      &--bold {
+        font-weight: 500;
+      }
+
+      &--small {
+        font-size: 1rem;
+      }
+
+      &--white {
+        color: #FFF;
+      }
+
+      &--red {
+        color: $mainRed;
+      }
     }
   
     &__close {

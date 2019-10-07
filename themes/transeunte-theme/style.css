@@ -1331,7 +1331,7 @@ a {
 .modal {
     position: fixed;
     z-index: 5;
-    background-color: rgba(255, 255, 255, .94);
+    background-color: rgba(30,30,30, .94);
     top: 0;
     bottom: 0;
     left: 0;
@@ -1346,12 +1346,40 @@ a {
       visibility: visible;
       transform: scale(1);
     }
-.modal__description {
+.modal__text {
       text-align: center;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       font-weight: 300;
-      line-height: 1.65;
     }
+@media (min-width: 992px) {
+.modal__text {
+        text-align: right
+    }
+  }
+.modal__text--large {
+        font-size: 3rem;
+      }
+.modal__text--light-gray {
+        color: #E0E0E0;
+      }
+.modal__text--italic {
+        font-style: italic;
+      }
+.modal__text--narrow {
+        line-height: .9;
+      }
+.modal__text--bold {
+        font-weight: 500;
+      }
+.modal__text--small {
+        font-size: 1rem;
+      }
+.modal__text--white {
+        color: #FFF;
+      }
+.modal__text--red {
+        color: #D30032;
+      }
 .modal__close {
       position: absolute;
       top: 15px;
