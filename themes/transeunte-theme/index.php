@@ -223,7 +223,7 @@ get_header('blog');
               </p> -->
             </div>
           </article>
-          </a>
+        </a>
       <?php
         }
         wp_reset_postdata();

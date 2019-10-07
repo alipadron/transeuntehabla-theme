@@ -139,7 +139,7 @@ transeunte_set_post_view();
                       'pinterest' => get_the_author_meta('pinterest'),
                       'soundcloud' => get_the_author_meta('soundcloud'),
                       'tumblr' => get_the_author_meta('tumblr'),
-                      'twitter' => 'https://twitter.com/' . get_the_author_meta('twitter'),
+                      'twitter' => get_the_author_meta('twitter') ? 'https://twitter.com/' . get_the_author_meta('twitter') : get_the_author_meta('twitter'),
                       'youtube' => get_the_author_meta('youtube')
                     );
                     foreach($authorSocialLinks as $socialNetwork => $url) {
@@ -171,46 +171,43 @@ transeunte_set_post_view();
         while ($featuredPosts->have_posts()) {
           $featuredPosts->the_post();
       ?>
-          <article class="featured-posts__post generic-content-container">
-            <?php /* the_post_thumbnail('thumbnail', array(
-                    'title' => get_the_title(get_post_thumbnail_id(get_the_id())),
-                    'class' => 'featured-posts__post__image'
-                  )); */
-            ?>
-            <picture>
-              <source
-                media="(min-width: 992px)"
-                srcset="<?php echo get_the_post_thumbnail_url( get_the_id(), 'postPortraitLarge'); ?>"
-              >
-              <source
-                media="(min-width: 768px)"
-                srcset="<?php echo get_the_post_thumbnail_url( get_the_id(), 'postLandscapeMedium'); ?>"
-              >
-              <source
-                media="(min-width: 576px)"
-                srcset="<?php echo get_the_post_thumbnail_url( get_the_id(), 'postLandscapeSmall'); ?>"
-              >
-              <img
-                alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>"
-                title="<?php echo get_the_title(get_post_thumbnail_id()); ?>"
-                class="featured-posts__post__image"
-                src="<?php echo get_the_post_thumbnail_url( get_the_id(), 'postLandscapeExtraSmall'); ?>"
-              >
-            </picture>
-            <p class="featured-posts__post__label">
-              Destacado
-            </p>
-            <div class="featured-posts__post__text wrapper">
-              <h2 class="featured-posts__post__text__title">
-                <a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a>
-              </h2>
-              <p class="featured-posts__post__text__content">
-                <?php echo wp_trim_words(get_the_content(), 18); ?>
-                <a href="<?php echo get_the_permalink() ?>">Leer más</a>
+          <a href="<?php echo get_the_permalink(); ?>">
+            <article class="featured-posts__post generic-content-container">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  srcset="<?php echo get_the_post_thumbnail_url( get_the_id(), 'postPortraitLarge'); ?>"
+                >
+                <source
+                  media="(min-width: 768px)"
+                  srcset="<?php echo get_the_post_thumbnail_url( get_the_id(), 'postLandscapeMedium'); ?>"
+                >
+                <source
+                  media="(min-width: 576px)"
+                  srcset="<?php echo get_the_post_thumbnail_url( get_the_id(), 'postLandscapeSmall'); ?>"
+                >
+                <img
+                  alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true); ?>"
+                  title="<?php echo get_the_title(get_post_thumbnail_id()); ?>"
+                  class="featured-posts__post__image"
+                  src="<?php echo get_the_post_thumbnail_url( get_the_id(), 'postLandscapeExtraSmall'); ?>"
+                >
+              </picture>
+              <p class="featured-posts__post__label">
+                Destacado
               </p>
-            </div>
-            
-          </article>
+              <div class="featured-posts__post__text wrapper">
+                <h2 class="featured-posts__post__text__title">
+                <?php echo get_the_title(); ?>
+                  <!-- <a href="<?php echo get_the_permalink(); ?>"></a> -->
+                </h2>
+                <!-- <p class="featured-posts__post__text__content">
+                  <?php echo has_excerpt() ? get_the_excerpt() : wp_trim_words(get_the_content(), 18); ?>
+                  <a href="<?php echo get_the_permalink() ?>">Leer más</a>
+                </p> -->
+              </div>
+            </article>
+          </a>
       <?php
         }
       ?>
