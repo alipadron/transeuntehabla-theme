@@ -1432,3 +1432,31 @@ div.wpcf7 .ajax-loader {
 div.wpcf7 .ajax-loader.is-active {
   display: inline-block;
 }
+.wpcf7-form .wpcf7-response-output.wpcf7-validation-errors {
+  color: #D8000C;
+  background-color: #FFBABA;
+  border: 0;
+  padding: 10px;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+@media (min-width: 992px) {
+.wpcf7-form .wpcf7-response-output.wpcf7-validation-errors {
+    margin: 0
+}
+  }
+.wpcf7-form .wpcf7-response-output.wpcf7-mail-sent-ok {
+  color: #4F8A10;
+  background-color: #DFF2BF;
+  border: 0;
+  padding: 10px;
+  width: 70%;
+  margin: 0;
+  text-align: center;
+}
+@media (min-width: 992px) {
+.wpcf7-form .wpcf7-response-output.wpcf7-mail-sent-ok {
+    margin: 0
+}
+  }
