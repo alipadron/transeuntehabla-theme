@@ -22,15 +22,6 @@ get_header('blog');
         src="<?php echo get_theme_file_uri('assets/images/portada-blog--extra-small.jpg'); ?>"
       >
     </picture>
-  <!-- <div class="wrapper">
-    <h1 class="page-banner__title">
-      Calle de las opiniones
-    </h1>
-    <p class="page-banner__subtitle">
-      Transitamos sin
-      <span class="page-banner__subtitle__line">cesar</span>
-    </p>
-  </div> -->
 </section>
 <!-- Título del blog -->
 

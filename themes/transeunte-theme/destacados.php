@@ -39,13 +39,8 @@
       </p>
       <div class="featured-posts__post__text wrapper">
         <h2 class="featured-posts__post__text__title">
-        <?php echo get_the_title(); ?>
-          <!-- <a href="<?php echo get_the_permalink(); ?>"></a> -->
+          <?php echo get_the_title(); ?>
         </h2>
-        <!-- <p class="featured-posts__post__text__content">
-          <?php echo has_excerpt() ? get_the_excerpt() : wp_trim_words(get_the_content(), 18); ?>
-          <a href="<?php echo get_the_permalink() ?>">Leer más</a>
-        </p> -->
       </div>
     </article>
   </a>

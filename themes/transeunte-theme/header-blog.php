@@ -34,9 +34,6 @@
               <li><a href="#">Artículos</a></li>
             </ul>
           </nav>
-          <!-- <div class="header__menu-content__btn-container">
-            <a class="btn btn--outline btn--red-text" href="#">Tienda</a>  
-          </div> -->
         </div>
       </div>
     </header>

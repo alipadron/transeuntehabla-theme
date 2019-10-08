@@ -22,15 +22,6 @@
       NULL,
       1
     );
-    /* wp_localize_script(
-      'transeunte_main_js',
-      'transeunteData',
-      array(
-        'root_url' => get_site_url(),
-        'nonce' => wp_create_nonce('wp_rest')
-        'postGallery' => get_field('galeria', $post->ID) 
-      )
-    ); */
   }
   add_action('wp_enqueue_scripts', 'transeunte_files');
 

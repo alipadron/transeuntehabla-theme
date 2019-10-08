@@ -60,13 +60,6 @@ while(have_posts()) { the_post();
         <div class="orgia-cultural-item">
         <?php
         // Get img tag
-        /**
-         * Extra small screens: 280x280 image
-         * Small screens: 250x250 image
-         * Medium screens: 230x230 image
-         * Large screens: 
-         * 
-         */
           the_post_thumbnail('squareMedium', array(
             'title' => get_the_title(get_post_thumbnail_id(get_the_id())),
             'class' => 'orgia-cultural-item__image'
