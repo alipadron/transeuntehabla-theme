@@ -161,7 +161,7 @@ transeunte_set_post_view();
       <!-- Contenido del post -->
       <hr class="separator separator--visible-until-large">
       <!-- Posts destacados -->
-      <?php get_template_part('destacados'); ?>
+      <?php get_template_part('template-parts/content', 'destacados'); ?>
       
     </div>
   </div>
