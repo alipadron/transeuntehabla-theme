@@ -1348,17 +1348,29 @@ a {
     }
 .modal__text {
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 1rem;
       font-weight: 300;
     }
 @media (min-width: 992px) {
 .modal__text {
-        text-align: right
+        text-align: right;
+        font-size: 1.5rem
     }
   }
 .modal__text--large {
-        font-size: 3rem;
+        font-size: 1rem;
+        margin: 0;
       }
+@media (min-width: 992px) {
+.modal__text--large {
+          font-size: 3rem
+      }
+  }
+@media (min-width: 576px) {
+.modal__text--large {
+          font-size: 1.5rem
+      }
+  }
 .modal__text--light-gray {
         color: #E0E0E0;
       }
