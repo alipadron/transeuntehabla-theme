@@ -1,0 +1,62 @@
+.archive {
+
+  &__title-container {
+    display: block;
+    margin-bottom: 1rem;
+
+    &__text {
+      color: #fff;
+      margin: 0;
+      padding: 0 3rem 0 1rem;
+      background-color: $mainRed;
+      text-transform: uppercase;
+      display: inline;
+    }
+
+    &__lines {
+      display: inline;
+      position: relative;
+      margin-left: .25rem;
+      bottom: .75rem;
+      &__left {
+        width: .5rem;
+        height: 2rem;
+        transform: skew(-10deg);
+        background-color: $mainRed;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      &__center {
+        width: .5rem;
+        height: 2rem;
+        transform: skew(-10deg);
+        background-color: $mainRed;
+        position: absolute;
+        top: 0;
+        left: 1rem;
+      }
+
+      &__right {
+        width: .5rem;
+        height: 2rem;
+        transform: skew(-10deg);
+        background-color: $mainRed;
+        position: absolute;
+        top: 0;
+        left: 2rem;
+      }
+    }    
+  }
+
+  &__pagination {
+    a {
+      color: $mainRed;
+    }
+
+    a:hover {
+      color: $darkGray;
+    }
+  }
+}

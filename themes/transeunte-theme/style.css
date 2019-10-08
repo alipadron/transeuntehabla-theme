@@ -1472,3 +1472,54 @@ div.wpcf7 .ajax-loader.is-active {
     margin: 0
 }
   }
+.archive__title-container {
+    display: block;
+    margin-bottom: 1rem;    
+  }
+.archive__title-container__text {
+      color: #fff;
+      margin: 0;
+      padding: 0 3rem 0 1rem;
+      background-color: #D30032;
+      text-transform: uppercase;
+      display: inline;
+    }
+.archive__title-container__lines {
+      display: inline;
+      position: relative;
+      margin-left: .25rem;
+      bottom: .75rem;
+    }
+.archive__title-container__lines__left {
+        width: .5rem;
+        height: 2rem;
+        transform: skew(-10deg);
+        background-color: #D30032;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+.archive__title-container__lines__center {
+        width: .5rem;
+        height: 2rem;
+        transform: skew(-10deg);
+        background-color: #D30032;
+        position: absolute;
+        top: 0;
+        left: 1rem;
+      }
+.archive__title-container__lines__right {
+        width: .5rem;
+        height: 2rem;
+        transform: skew(-10deg);
+        background-color: #D30032;
+        position: absolute;
+        top: 0;
+        left: 2rem;
+      }
+.archive__pagination a {
+      color: #D30032;
+    }
+.archive__pagination a:hover {
+      color: #1E1E1E;
+    }
