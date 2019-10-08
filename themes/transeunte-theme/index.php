@@ -10,12 +10,8 @@ get_header('blog');
         srcset="<?php echo get_theme_file_uri('assets/images/portada-blog--extra-large.jpg'); ?>"
       >
       <source
-        media="(min-width: 992px)"
-        srcset="<?php echo get_theme_file_uri('assets/images/portada-blog--large.jpg'); ?>"
-      >
-      <source
         media="(min-width: 768px)"
-        srcset="<?php echo get_theme_file_uri('assets/images/portada-blog--medium.jpg'); ?>"
+        srcset="<?php echo get_theme_file_uri('assets/images/portada-blog--large.jpg'); ?>"
       >
       <source
         media="(min-width: 576px)"
