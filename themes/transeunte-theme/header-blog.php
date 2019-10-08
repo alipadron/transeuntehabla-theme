@@ -27,11 +27,11 @@
         <div class="header__menu-content">
           <nav class="header__menu-content__navigation header__menu-content__navigation--black">
             <ul>
-              <li><a href="#">Cuentos</a></li>
-              <li><a href="#">Entrevistas</a></li>
-              <li><a href="#">Listas</a></li>
-              <li><a href="#">Editoriales</a></li>
-              <li><a href="#">Artículos</a></li>
+              <li><a href="<?php echo site_url('cuentos'); ?>">Cuentos</a></li>
+              <li><a href="<?php echo site_url('entrevistas'); ?>">Entrevistas</a></li>
+              <li><a href="<?php echo site_url('listas'); ?>">Listas</a></li>
+              <li><a href="<?php echo site_url('editoriales'); ?>">Editoriales</a></li>
+              <li><a href="<?php echo site_url('articulos'); ?>">Artículos</a></li>
             </ul>
           </nav>
         </div>
