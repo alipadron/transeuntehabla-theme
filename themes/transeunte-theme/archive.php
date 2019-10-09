@@ -6,9 +6,7 @@ get_header('blog');
 <div class="archive">
   <div class="wrapper wrapper--no-padding-until-large">
     <div class="archive__title-container">
-      <h1 class="archive__title-container__text">
-        <?php echo explode(' ', get_the_archive_title())[1]; ?>
-      </h1>
+      <h1 class="archive__title-container__text"><?php echo explode(' ', get_the_archive_title())[1]; ?></h1>
       <div class="archive__title-container__lines">
         <div class="archive__title-container__lines__left"></div>
         <div class="archive__title-container__lines__center"></div>

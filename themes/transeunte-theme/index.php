@@ -114,4 +114,7 @@ get_header('blog');
 </main>
 
 
-<?php get_footer(); ?>
+<?php
+  get_template_part('template-parts/content', 'modal');
+  get_footer();
+?>
