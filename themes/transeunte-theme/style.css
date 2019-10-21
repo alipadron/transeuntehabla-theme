@@ -1517,9 +1517,50 @@ div.wpcf7 .ajax-loader.is-active {
         top: 0;
         left: 2rem;
       }
-.archive__pagination a {
-      color: #D30032;
+.archive__pagination {
+    position: relative;
+    height: 20px;
+  }
+@media (min-width: 992px) {
+.archive__pagination {
+      margin-top: 1rem
+  }
+  }
+.archive__pagination__line {
+      background-color: #E0E0E0;
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      top: 50%;
+      transform: translateY(-50%);  
     }
-.archive__pagination a:hover {
-      color: #1E1E1E;
+.archive__pagination__links {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background-color: #FFF;
+      padding-left: .5rem;
     }
+@media (min-width: 992px) {
+.archive__pagination__links {
+        left: 0;
+        transform: translateY(-50%);
+        padding-left: 0
+    }
+  }
+.archive__pagination__links .page-numbers {
+        width: 20px;
+        display: inline-block;
+      }
+.archive__pagination__links a {
+        color: #1E1E1E;
+      }
+.archive__pagination__links a:hover {
+        color: #D30032;
+      }
+.archive__pagination__links .current {
+        background-color: #1E1E1E;
+        color: #FFF;
+      }

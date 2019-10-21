@@ -14,6 +14,7 @@ get_header('blog');
       </div>
     </div>
     <?php
+    
       $postCounter = 0;
       if (have_posts()) {
         echo '<div class="blog-posts__others">';
@@ -30,10 +31,26 @@ get_header('blog');
         }
         echo '</div>';
       }
+      global $wp_query;
+      if ($wp_query->max_num_pages > 1) {
     ?>
-  <div class="archive__pagination">
-    <?php echo paginate_links(); ?>
-  </div>
+        <div class="archive__pagination">
+          <div class="archive__pagination__line"></div>
+          <div class="archive__pagination__links">
+            <?php 
+                echo paginate_links(array(
+                  'prev_text' => __( '&laquo;' ),
+                  'next_text' => __( '&raquo;' )
+                  )
+                );
+              ?>
+          
+          </div>
+        </div>
+    <?php
+      }
+    ?>
+    
   </div>
 </div>
 

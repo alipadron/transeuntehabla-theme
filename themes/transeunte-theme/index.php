@@ -68,6 +68,7 @@ get_header('blog');
         }
         wp_reset_postdata();
         // Obtener posts relacionados a la editorial
+        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $relationedEditorialPosts = new WP_Query(array(
           'posts_per_page' => get_option('posts_per_page'),
           'post_type' => 'post',
@@ -77,7 +78,8 @@ get_header('blog');
               'compare' => 'LIKE',
               'value' => '"' . $editorialPostId . '"'
             )
-          )
+          ),
+          'paged' => $paged
         ));
         $postCounter = 0;
         if ($relationedEditorialPosts->have_posts()) {
@@ -97,7 +99,6 @@ get_header('blog');
           echo '</div>';
           echo '<!-- Posts relacionados con la editorial -->';
         }
-        wp_reset_postdata();
       ?>
         </section>
       </div>
@@ -106,6 +107,28 @@ get_header('blog');
       
       
     </div>
+    <?php
+      if ($relationedEditorialPosts->max_num_pages > 1) {
+    ?>
+      <div class="archive__pagination">
+        <div class="archive__pagination__line"></div>
+        <div class="archive__pagination__links">
+          <?php
+              echo paginate_links(array(
+                'total' => $relationedEditorialPosts->max_num_pages,
+                'prev_text' => __( '&laquo;' ),
+                'next_text' => __( '&raquo;' )
+                )
+              );
+              wp_reset_postdata();
+            ?>
+        
+        </div>
+      </div>
+    <?php
+      }
+    ?>
+    
   </div>
 <!-- Posts -->
 
