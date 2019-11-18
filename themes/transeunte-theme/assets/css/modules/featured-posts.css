@@ -1,69 +1,69 @@
 .featured-posts {
   height: 100%;
   @mixin atLarge {
-    padding-left: 1rem;
-    border-left: #000 solid .5px;
+	padding-left: 1rem;
+	border-left: #000 solid .5px;
   }
   &__post {
-    margin-bottom: 2rem;
-    position: relative;
-    @mixin atLarge {
-      margin-bottom: 1rem;
-    }
-    &__image {
-      display: block;
-      width: 100%;
-    }
-    &__label {
-      padding: .5rem 0;
-      margin: 0;
-      background-color: $mainRed;
-      text-transform: uppercase;
-      text-align: center;
-      font-weight: 600;
-      color: #FFF;
-      font-size: .75rem;
-    }
-    &__text {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      right: 0;
-      transform: translateY(-50%);
-      background-color: rgba($darkGray, .3);
-      display: block;
-      text-align: center;
+	margin-bottom: 2rem;
+	position: relative;
+	@mixin atLarge {
+	  margin-bottom: 1rem;
+	}
+	&__image {
+	  display: block;
+	  width: 100%;
+	}
+	&__label {
+	  padding: .5rem 0;
+	  margin: 0;
+	  background-color: $mainRed;
+	  text-transform: uppercase;
+	  text-align: center;
+	  font-weight: 600;
+	  color: #FFF;
+	  font-size: .75rem;
+	}
+	&__text {
+	  position: absolute;
+	  top: 50%;
+	  left: 0;
+	  right: 0;
+	  transform: translateY(-50%);
+	  background-color: rgba($darkGray, .3);
+	  display: block;
+	  text-align: center;
 
-      @mixin atLarge {
-        display: none;
-      }
+	  @mixin atLarge {
+		display: none;
+	  }
 
-      &--is-visible {
-        display: block;
-      }
+	  &--is-visible {
+		display: block;
+	  }
 
-      &__title {
-        text-transform: uppercase;
-        margin: 0;
-        color: $lightGray;
-        font-size: 1rem;
-        @mixin atLarge {
-          font-size: .75rem;
-        }
-      }
-  
-      &__content {
-        margin: .5rem 0;
-        a {
-          color: $mainRed;
-        }
-      }
+	  &__title {
+		text-transform: uppercase;
+		margin: 0;
+		color: $lightGray;
+		font-size: 1rem;
+		@mixin atLarge {
+		  font-size: .75rem;
+		}
+	  }
 
-      
+	  &__content {
+		margin: .5rem 0;
+		a {
+		  color: $mainRed;
+		}
+	  }
 
-      a:hover {
-        text-decoration: underline;
-      }
-    }
+
+
+	  a:hover {
+		text-decoration: underline;
+	  }
+	}
   }
 }

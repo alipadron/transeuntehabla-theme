@@ -1,94 +1,94 @@
 .modal {
-    position: fixed;
-    z-index: 5;
-    background-color: rgba($darkGray, .94);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(1.2);
-    transition: all .3s ease-out;
-  
-    &--is-visible {
-      opacity: 1;
-      visibility: visible;
-      transform: scale(1);
-    }
-  
-    &__text {
-      text-align: center;
-      font-size: 1rem;
-      font-weight: 300;
+	position: fixed;
+	z-index: 5;
+	background-color: rgba($darkGray, .94);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(1.2);
+	transition: all .3s ease-out;
 
-      
+	&--is-visible {
+	  opacity: 1;
+	  visibility: visible;
+	  transform: scale(1);
+	}
 
-      @mixin atLarge {
-        text-align: right;
-        font-size: 1.5rem;
-      }
+	&__text {
+	  text-align: center;
+	  font-size: 1rem;
+	  font-weight: 300;
 
-      &--large {
-        font-size: 1rem;
-        margin: 0;
-        @mixin atLarge {
-          font-size: 3rem;
-        }
 
-        @mixin atSmall {
-          font-size: 1.5rem;
-        }
-      }
 
-      &--light-gray {
-        color: $lightGray;
-      }
+	  @mixin atLarge {
+		text-align: right;
+		font-size: 1.5rem;
+	  }
 
-      &--italic {
-        font-style: italic;
-      }
+	  &--large {
+		font-size: 1rem;
+		margin: 0;
+		@mixin atLarge {
+		  font-size: 3rem;
+		}
 
-      &--narrow {
-        line-height: .9;
-      }
+		@mixin atSmall {
+		  font-size: 1.5rem;
+		}
+	  }
 
-      &--bold {
-        font-weight: 500;
-      }
+	  &--light-gray {
+		color: $lightGray;
+	  }
 
-      &--small {
-        font-size: 1rem;
-      }
+	  &--italic {
+		font-style: italic;
+	  }
 
-      &--white {
-        color: #FFF;
-      }
+	  &--narrow {
+		line-height: .9;
+	  }
 
-      &--red {
-        color: $mainRed;
-      }
-    }
-  
-    &__close {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      font-size: 2rem;
-      transform: scaleX(1.2);
-      transform-origin: 100% 0;
-      color: $mainRed;
-      cursor: pointer;
-  
-      &:hover {
-        color: $darkGray;
-      }
-    }
-  
-    &__inner {
-      position: absolute;
-      width: 100%;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+	  &--bold {
+		font-weight: 500;
+	  }
+
+	  &--small {
+		font-size: 1rem;
+	  }
+
+	  &--white {
+		color: #FFF;
+	  }
+
+	  &--red {
+		color: $mainRed;
+	  }
+	}
+
+	&__close {
+	  position: absolute;
+	  top: 15px;
+	  right: 15px;
+	  font-size: 2rem;
+	  transform: scaleX(1.2);
+	  transform-origin: 100% 0;
+	  color: $mainRed;
+	  cursor: pointer;
+
+	  &:hover {
+		color: $darkGray;
+	  }
+	}
+
+	&__inner {
+	  position: absolute;
+	  width: 100%;
+	  top: 50%;
+	  transform: translateY(-50%);
+	}
   }

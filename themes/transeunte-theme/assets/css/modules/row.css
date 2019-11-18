@@ -2,114 +2,114 @@
   @mixin clearfix;
 
   &--gutters {
-    margin-right: -4rem;
+	margin-right: -4rem;
   }
 
   &--gutters > div {
-    padding-right: 4rem;
+	padding-right: 4rem;
   }
 
   &--gutters-small {
-    margin-right: -6rem;
+	margin-right: -6rem;
   }
 
   &--gutters-small > div {
-    padding-right: 6rem;
+	padding-right: 6rem;
   }
 
   &--gutters-large {
-    margin-right: -2rem;
+	margin-right: -2rem;
   }
 
   &--gutters-large > div {
-    padding-right: 2rem;
+	padding-right: 2rem;
   }
 
   &--margin-top > div {
-    margin-top: 1rem;
+	margin-top: 1rem;
   }
 
   &--margin-bottom > div {
-    margin-bottom: 1rem;
+	margin-bottom: 1rem;
   }
 
   @mixin atSmall {
-    &__small-6 {
-      float: left;
-      width: 50%;
-    }
+	&__small-6 {
+	  float: left;
+	  width: 50%;
+	}
   }
 
 
   @mixin atMedium {
-    &__medium-6 {
-      float: left;
-      width: 50%;
-    }
+	&__medium-6 {
+	  float: left;
+	  width: 50%;
+	}
 
-    &__medium-4 {
-      float: left;
-      width: 33.33%;
-    }
+	&__medium-4 {
+	  float: left;
+	  width: 33.33%;
+	}
 
-    &__medium-8 {
-      float: left;
-      width: 66.66%;
-    }
+	&__medium-8 {
+	  float: left;
+	  width: 66.66%;
+	}
   }
 
   @mixin atLarge {
-    &__large-4 {
-      float: left;
-      width: 33.33%;
-    }
+	&__large-4 {
+	  float: left;
+	  width: 33.33%;
+	}
 
-    &__large-3 {
-      float: left;
-      width: 25%;
-    }
+	&__large-3 {
+	  float: left;
+	  width: 25%;
+	}
 
-    &__large-6 {
-      float: left;
-      width: 50%;
-    }
+	&__large-6 {
+	  float: left;
+	  width: 50%;
+	}
 
-    &__large-8 {
-      float: left;
-      width: 66.66%;
-    }
+	&__large-8 {
+	  float: left;
+	  width: 66.66%;
+	}
 
-    &__large-10 {
-      float: left;
-      width: 83.33%;
-    }
+	&__large-10 {
+	  float: left;
+	  width: 83.33%;
+	}
 
-    &__large-2 {
-      float: left;
-      width: 16.66%;
-    }
+	&__large-2 {
+	  float: left;
+	  width: 16.66%;
+	}
   }
 
   @mixin atExtraLarge {
-    &__extra-large-3 {
-      float: left;
-      width: 25%;
-    }
-    &__extra-large-4 {
-      float: left;
-      width: 33.33%;
-    }
+	&__extra-large-3 {
+	  float: left;
+	  width: 25%;
+	}
+	&__extra-large-4 {
+	  float: left;
+	  width: 33.33%;
+	}
   }
 
   &--equal-height-at-large {
 
-    @mixin atLarge {
-      display: flex;
-    }
+	@mixin atLarge {
+	  display: flex;
+	}
 
-    & > div {
-      float: none;
-      display: flex;
-    }
+	& > div {
+	  float: none;
+	  display: flex;
+	}
   }
 }

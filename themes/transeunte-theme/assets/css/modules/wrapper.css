@@ -6,20 +6,20 @@
   position: relative;
 
   &--no-padding-until-large {
-    padding: 0 0;
+	padding: 0 0;
 
-    @mixin atLarge {
-      padding: 0 20px;
-    }
+	@mixin atLarge {
+	  padding: 0 20px;
+	}
   }
 
   @mixin atLarge {
-    .wrapper {
-      padding: 0;
-    }
+	.wrapper {
+	  padding: 0;
+	}
 
-    .wrapper--keep-padding {
-      padding: 0 20px;
-    }
+	.wrapper--keep-padding {
+	  padding: 0 20px;
+	}
   }
 }

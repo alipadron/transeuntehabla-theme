@@ -5,37 +5,37 @@
   padding: 0 1.25rem;
 
   &__photo {
-    border: 6px solid rgba(255, 255, 255, .8);
-    position: relative;
-    width: 160px;
-    height: 160px;
-    margin: 0 auto -5rem;
-    top: -80px;
-    overflow: hidden;
-    border-radius: 100%;
+	border: 6px solid rgba(255, 255, 255, .8);
+	position: relative;
+	width: 160px;
+	height: 160px;
+	margin: 0 auto -5rem;
+	top: -80px;
+	overflow: hidden;
+	border-radius: 100%;
   }
 
   &__title {
-    color: $mainRed;
-    margin: 0;
-    font-size: 1.75rem;
-    font-weight: 500;
+	color: $mainRed;
+	margin: 0;
+	font-size: 1.75rem;
+	font-weight: 500;
   }
 
   &__social-icons {
-    text-align: center;
-    margin-bottom: .5rem;
-    a {
-      color: $mainRed;
-      margin-right: 1rem;
-    }
+	text-align: center;
+	margin-bottom: .5rem;
+	a {
+	  color: $mainRed;
+	  margin-right: 1rem;
+	}
 
-    a:last-child {
-      margin-right: 0;
-    }
+	a:last-child {
+	  margin-right: 0;
+	}
 
-    a:hover {
-      color: $darkGray;
-    }
+	a:hover {
+	  color: $darkGray;
+	}
   }
 }

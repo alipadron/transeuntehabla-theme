@@ -4,19 +4,19 @@
   text-align: center;
 
   @mixin atLarge {
-    text-align: left;
+	text-align: left;
   }
 
   &__text {
-    font-weight: 300;
-    a {
-      color: $mainRed;
-    }
-  
-    a:hover {
-      text-decoration: underline;
-      font-weight: 400;
-    }
+	font-weight: 300;
+	a {
+	  color: $mainRed;
+	}
+
+	a:hover {
+	  text-decoration: underline;
+	  font-weight: 400;
+	}
   }
-  
+
 }

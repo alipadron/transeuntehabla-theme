@@ -1,38 +1,38 @@
 import $ from 'jquery';
 
 export default class Modal {
-  constructor() {
-    this.openModalButton = $('.open-modal');
-    this.modal = $('.modal');
-    this.closeModalButton = $('.modal__close');
-    this.events();
-  }
+	constructor() {
+		this.openModalButton  = $( '.open-modal' );
+		this.modal            = $( '.modal' );
+		this.closeModalButton = $( '.modal__close' );
+		this.events();
+	}
 
-  events() {
-    // clicking the open modal button
-    this.openModalButton.click(this.openModal.bind(this));
-    
-    // clicking the X close modal button
-    this.closeModalButton.click(this.closeModal.bind(this));
+	events() {
+		// clicking the open modal button
+		this.openModalButton.click( this.openModal.bind( this ) );
 
-    // pushes the escape key
-    $(document).keyup(this.keyPressHandler.bind(this));
-  }
+		// clicking the X close modal button
+		this.closeModalButton.click( this.closeModal.bind( this ) );
 
-  keyPressHandler(e) {
-    if (e.key.toLowerCase() === 'escape') {
-      this.closeModal();
-    }
-  }
+		// pushes the escape key
+		$( document ).keyup( this.keyPressHandler.bind( this ) );
+	}
 
-  openModal() {
-    this.modal.addClass('modal--is-visible');
-    return false;
-  }
+	keyPressHandler(e) {
+		if (e.key.toLowerCase() === 'escape') {
+			this.closeModal();
+		}
+	}
 
-  closeModal() {
-    this.modal.removeClass('modal--is-visible');
-  }
+	openModal() {
+		this.modal.addClass( 'modal--is-visible' );
+		return false;
+	}
+
+	closeModal() {
+		this.modal.removeClass( 'modal--is-visible' );
+	}
 
 
 }

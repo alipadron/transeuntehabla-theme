@@ -2,10 +2,10 @@
   font-weight: 300;
 
   &--gray {
-    color: $darkGray;
+	color: $darkGray;
   }
 
   &--white {
-    color: #fff;
+	color: #fff;
   }
 }

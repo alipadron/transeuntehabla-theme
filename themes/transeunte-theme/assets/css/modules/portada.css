@@ -4,69 +4,69 @@
   height: 100%;
 
   &__imagen {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
   }
 
   &__contenido {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    left: 0;
-    color: #FFF;
-    font-style: italic;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	left: 0;
+	color: #FFF;
+	font-style: italic;
 
-    &__titulo {
-      font-size: 3rem;
-      margin-bottom: 0;
-      margin-top: 0;
+	&__titulo {
+	  font-size: 3rem;
+	  margin-bottom: 0;
+	  margin-top: 0;
 
-      @mixin atSmall {
-        font-size: 5rem;
-      }
+	  @mixin atSmall {
+		font-size: 5rem;
+	  }
 
-      @mixin atMedium {
-        font-weight: 600;
-        font-size: 6rem;
-      }
-    }
+	  @mixin atMedium {
+		font-weight: 600;
+		font-size: 6rem;
+	  }
+	}
 
-    &__subtitulo {
-      font-size: 1rem;
-      margin-top: 0;
-      font-weight: 300;
-      @mixin atSmall {
-        font-size: 1.5rem;
-      }
+	&__subtitulo {
+	  font-size: 1rem;
+	  margin-top: 0;
+	  font-weight: 300;
+	  @mixin atSmall {
+		font-size: 1.5rem;
+	  }
 
-      @mixin atMedium {
-        font-size: 1.5rem;
-      }
-    }
+	  @mixin atMedium {
+		font-size: 1.5rem;
+	  }
+	}
 
-    &__descripcion {
-      background-color: $mainRed;
-      text-transform: uppercase;
-      display: inline-block;
-      padding: .25rem .5rem 0 .25rem;
-      color: $darkGray;
-      border-radius: .25rem;
+	&__descripcion {
+	  background-color: $mainRed;
+	  text-transform: uppercase;
+	  display: inline-block;
+	  padding: .25rem .5rem 0 .25rem;
+	  color: $darkGray;
+	  border-radius: .25rem;
 
-      @mixin atSmall {
-        font-size: 1.25rem;
-      }
+	  @mixin atSmall {
+		font-size: 1.25rem;
+	  }
 
-      @mixin atMedium {
-        font-size: 1.5rem;
-      }
-    }
+	  @mixin atMedium {
+		font-size: 1.5rem;
+	  }
+	}
 
-    &__btn-video {
-      display: block;
-    }
+	&__btn-video {
+	  display: block;
+	}
   }
 }

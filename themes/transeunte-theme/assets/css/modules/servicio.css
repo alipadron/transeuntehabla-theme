@@ -1,15 +1,15 @@
 .servicio {
   text-align: center;
   &__title {
-    font-size: 1.5rem;
-    margin: 0;
+	font-size: 1.5rem;
+	margin: 0;
 
-    @mixin atLarge {
-      margin: 0;
-    }
+	@mixin atLarge {
+	  margin: 0;
+	}
 
-    &__line {
-      text-decoration: underline $mainBlue;
-    }
+	&__line {
+	  text-decoration: underline $mainBlue;
+	}
   }
 }

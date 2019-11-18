@@ -4,35 +4,35 @@
   text-transform: uppercase;
   color: $darkGray;
   position: relative;
-  
+
   margin-bottom: 1rem;
 
-  
-  &__title {
-    margin: 0;
-    font-size: 3rem;
 
-    &--align-left {
-      @mixin atLarge {
-        text-align: left;
-        width: 850px;
-      }
-    }
+  &__title {
+	margin: 0;
+	font-size: 3rem;
+
+	&--align-left {
+	  @mixin atLarge {
+		text-align: left;
+		width: 850px;
+	  }
+	}
   }
 
   &__subtitle {
-    font-weight: 300;
-    font-size: 1.5rem;
-    margin: 0;
-    padding-bottom: 1rem;
+	font-weight: 300;
+	font-size: 1.5rem;
+	margin: 0;
+	padding-bottom: 1rem;
   }
   &__line {
-    border-bottom: .25rem solid $mainRed;
+	border-bottom: .25rem solid $mainRed;
   }
 
   &__image {
-    width: 100%;
-    display: block;
+	width: 100%;
+	display: block;
   }
-  
+
 }
