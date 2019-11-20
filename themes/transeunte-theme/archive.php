@@ -38,12 +38,10 @@ get_header( 'blog' );
 			<div class="archive__pagination__line"></div>
 			<div class="archive__pagination__links">
 		<?php
-		echo esc_html(
-			paginate_links(
-				array(
-					'prev_text' => __( '&laquo;' ),
-					'next_text' => __( '&raquo;' ),
-				)
+		echo paginate_links(
+			array(
+				'prev_text' => __( '&laquo;' ),
+				'next_text' => __( '&raquo;' ),
 			)
 		);
 		?>
