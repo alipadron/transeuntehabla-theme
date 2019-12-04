@@ -27,6 +27,7 @@
 				<div class="header__menu-content">
 					<nav class="header__menu-content__navigation header__menu-content__navigation--black">
 					<ul>
+						<li><a href="<?php echo esc_url( site_url( 'poemas' ) ); ?>">Poemas</a></li>
 						<li><a href="<?php echo esc_url( site_url( 'cuentos' ) ); ?>">Cuentos</a></li>
 						<li><a href="<?php echo esc_url( site_url( 'entrevistas' ) ); ?>">Entrevistas</a></li>
 						<li><a href="<?php echo esc_url( site_url( 'listas' ) ); ?>">Listas</a></li>
