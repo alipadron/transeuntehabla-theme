@@ -1,5 +1,5 @@
 .row {
-  @mixin clearfix;
+	@mixin clearfix;
 
   &--gutters {
 	margin-right: -4rem;

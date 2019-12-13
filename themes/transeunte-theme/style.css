@@ -73,7 +73,7 @@ abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-		  text-decoration: underline dotted; /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
@@ -284,112 +284,112 @@ template {
 /* Slider */
 .slick-slider
 {
-	position: relative;
+    position: relative;
 
-	display: block;
-	box-sizing: border-box;
+    display: block;
+    box-sizing: border-box;
 
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-		-ms-user-select: none;
-			user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 
-	-webkit-touch-callout: none;
-	-khtml-user-select: none;
-	touch-action: pan-y;
-	-webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
 }
 .slick-list
 {
-	position: relative;
+    position: relative;
 
-	display: block;
-	overflow: hidden;
+    display: block;
+    overflow: hidden;
 
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 .slick-list:focus
 {
-	outline: none;
+    outline: none;
 }
 .slick-list.dragging
 {
-	cursor: pointer;
-	cursor: hand;
+    cursor: pointer;
+    cursor: hand;
 }
 .slick-slider .slick-track,
 .slick-slider .slick-list
 {
-	transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 .slick-track
 {
-	position: relative;
-	top: 0;
-	left: 0;
+    position: relative;
+    top: 0;
+    left: 0;
 
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .slick-track:before,
 .slick-track:after
 {
-	display: table;
+    display: table;
 
-	content: '';
+    content: '';
 }
 .slick-track:after
 {
-	clear: both;
+    clear: both;
 }
 .slick-loading .slick-track
 {
-	visibility: hidden;
+    visibility: hidden;
 }
 .slick-slide
 {
-	display: none;
-	float: left;
+    display: none;
+    float: left;
 
-	height: 100%;
-	min-height: 1px;
+    height: 100%;
+    min-height: 1px;
 }
 [dir='rtl'] .slick-slide
 {
-	float: right;
+    float: right;
 }
 .slick-slide img
 {
-	display: block;
+    display: block;
 }
 .slick-slide.slick-loading img
 {
-	display: none;
+    display: none;
 }
 .slick-slide.dragging img
 {
-	pointer-events: none;
+    pointer-events: none;
 }
 .slick-initialized .slick-slide
 {
-	display: block;
+    display: block;
 }
 .slick-loading .slick-slide
 {
-	visibility: hidden;
+    visibility: hidden;
 }
 .slick-vertical .slick-slide
 {
-	display: block;
+    display: block;
 
-	height: auto;
+    height: auto;
 
-	border: 1px solid transparent;
+    border: 1px solid transparent;
 }
 .slick-arrow.slick-hidden {
-	display: none;
+    display: none;
 }
 /* Fonts */
 @font-face {
@@ -717,7 +717,7 @@ a {
   }
 .servicio__title__line {
 	  -webkit-text-decoration: underline #00F9FF;
-			  text-decoration: underline #00F9FF;
+	          text-decoration: underline #00F9FF;
 	}
 .generic-content-container {
   font-weight: 300;
@@ -1564,3 +1564,30 @@ div.wpcf7 .ajax-loader.is-active {
 		background-color: #1E1E1E;
 		color: #FFF;
 	  }
+.main-tienda__feature-item__container {
+      margin: 0 auto;
+      width: 19rem;
+      position: relative;
+    }
+.main-tienda__feature-item__container__text {
+        text-align: right;
+        margin-right: 2rem;
+        text-transform: uppercase;
+      
+      }
+.main-tienda__feature-item__container__text__title {
+          color: #1E1E1E;
+          font-weight: 700;
+          font-size: 2rem;
+          margin: 0;
+        }
+.main-tienda__feature-item__container__text__subtitle {
+          font-weight: 300;
+          margin: 0;
+        }
+.main-tienda__feature-item__container__icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: .5rem;
+      }

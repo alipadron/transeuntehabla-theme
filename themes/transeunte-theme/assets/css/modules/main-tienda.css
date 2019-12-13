@@ -1,0 +1,35 @@
+.main-tienda {
+  &__feature-item {
+    &__container {
+      margin: 0 auto;
+      width: 19rem;
+      position: relative;
+
+      &__text {
+        text-align: right;
+        margin-right: 2rem;
+        text-transform: uppercase;
+
+        &__title {
+          color: $darkGray;
+          font-weight: 700;
+          font-size: 2rem;
+          margin: 0;
+        }
+
+        &__subtitle {
+          font-weight: 300;
+          margin: 0;
+        }
+      
+      }
+  
+      &__icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: .5rem;
+      }
+    }
+  }
+}
